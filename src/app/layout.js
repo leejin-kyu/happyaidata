@@ -79,7 +79,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code', // Google Search Console에서 받을 코드
+    google: '845stqUXS6n3PiKrXMmqmgq75rk7cb0UWSJE-s9lxHA', // Google Search Console에서 받을 코드
     // naver: 'your-naver-verification-code', // 네이버 서치어드바이저에서 받을 코드
   },
 };
