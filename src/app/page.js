@@ -5,35 +5,9 @@ export default function Home() {
   const { home } = siteContent;
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
-      {/* 히어로 섹션 - 심플한 컬러 */}
-      <section className="relative bg-gradient-to-br from-slate-50 via-blue-50/20 to-slate-50 dark:from-slate-950 dark:via-blue-950/20 dark:to-slate-950 py-16 sm:py-24 md:py-40 lg:py-48 overflow-hidden">
-        {/* AI 신경망 배경 패턴 - 은은하게 */}
-        <div className="absolute inset-0 opacity-[0.025] dark:opacity-[0.05]">
-          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="neural-network" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
-                <circle cx="20" cy="20" r="2" fill="rgb(37, 99, 235)" opacity="0.4"/>
-                <circle cx="100" cy="40" r="2.5" fill="rgb(6, 182, 212)" opacity="0.4"/>
-                <circle cx="180" cy="30" r="2" fill="rgb(14, 165, 233)" opacity="0.4"/>
-                <circle cx="60" cy="100" r="2.5" fill="rgb(37, 99, 235)" opacity="0.4"/>
-                <circle cx="140" cy="120" r="2" fill="rgb(6, 182, 212)" opacity="0.4"/>
-                <circle cx="40" cy="180" r="2.5" fill="rgb(14, 165, 233)" opacity="0.4"/>
-                <circle cx="160" cy="170" r="2" fill="rgb(37, 99, 235)" opacity="0.4"/>
-                <line x1="20" y1="20" x2="100" y2="40" stroke="rgb(37, 99, 235)" strokeWidth="0.3" opacity="0.15"/>
-                <line x1="100" y1="40" x2="180" y2="30" stroke="rgb(6, 182, 212)" strokeWidth="0.3" opacity="0.15"/>
-                <line x1="20" y1="20" x2="60" y2="100" stroke="rgb(14, 165, 233)" strokeWidth="0.3" opacity="0.15"/>
-                <line x1="100" y1="40" x2="140" y2="120" stroke="rgb(37, 99, 235)" strokeWidth="0.3" opacity="0.15"/>
-                <line x1="60" y1="100" x2="140" y2="120" stroke="rgb(6, 182, 212)" strokeWidth="0.3" opacity="0.15"/>
-                <line x1="60" y1="100" x2="40" y2="180" stroke="rgb(14, 165, 233)" strokeWidth="0.3" opacity="0.15"/>
-                <line x1="140" y1="120" x2="160" y2="170" stroke="rgb(37, 99, 235)" strokeWidth="0.3" opacity="0.15"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#neural-network)"/>
-          </svg>
-        </div>
-
-        {/* 글로우 효과 제거 (심플하게) */}
+    <div className="min-h-screen bg-white dark:bg-slate-950">
+      {/* 히어로 섹션 - 다른 섹션과 통일감 */}
+      <section className="relative bg-white dark:bg-slate-950 py-16 sm:py-24 md:py-40 lg:py-48 overflow-hidden">
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
@@ -78,34 +52,18 @@ export default function Home() {
               </div>
             </div>
 
-            {/* 오른쪽 통계/시각 요소 - 심플하게 */}
+            {/* 오른쪽 통계/시각 요소 - 솔루션 스타일과 통일 */}
             <div className="relative animate-slide-up mt-8 md:mt-0">
               <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6">
                 {home.hero.stats.map((stat, index) => (
                   <div
                     key={index}
-                    className={
-                      index % 3 === 0
-                        ? "relative bg-gradient-to-br from-blue-600 via-cyan-600 to-sky-600 p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 transform overflow-hidden group"
-                        : "relative bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl shadow-md border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-blue-200 dark:hover:border-blue-600 hover:scale-105 transition-all duration-300 transform group"
-                    }
+                    className="group relative bg-white dark:bg-slate-800 p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-600 hover:-translate-y-1 transform"
                   >
-                    <div
-                      className={
-                        index % 3 === 0
-                          ? "relative text-4xl sm:text-5xl md:text-6xl font-black text-white mb-2 sm:mb-3"
-                          : "relative text-4xl sm:text-5xl md:text-6xl font-black bg-gradient-to-r from-blue-600 via-cyan-600 to-sky-600 dark:from-indigo-400 dark:via-violet-400 dark:to-fuchsia-400 bg-clip-text text-transparent mb-2 sm:mb-3"
-                      }
-                    >
+                    <div className="relative text-4xl sm:text-5xl md:text-6xl font-black bg-gradient-to-r from-blue-600 via-cyan-600 to-sky-600 dark:from-blue-400 dark:via-cyan-400 dark:to-sky-400 bg-clip-text text-transparent mb-2 sm:mb-3">
                       {stat.number}
                     </div>
-                    <div
-                      className={
-                        index % 3 === 0
-                          ? "relative text-xs sm:text-sm font-bold text-blue-100 uppercase tracking-wide"
-                          : "relative text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wide"
-                      }
-                    >
+                    <div className="relative text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wide">
                       {stat.label}
                     </div>
                   </div>
