@@ -1,18 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { getContent } from "@/data/translations";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { useLanguage } from "@/contexts/LanguageContext";
-import { getContent } from "@/data/translations";
-import LanguageSwitcher from "./LanguageSwitcher";
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+import { siteContent } from "@/data/content";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { language } = useLanguage();
-  const content = getContent(language);
-  const { header } = content;
+  const { header } = siteContent;
 
   return (
     <header className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-800/50 sticky top-0 z-50 shadow-sm">
@@ -90,9 +91,6 @@ export default function Header() {
                 </svg>
               </a>
             </div>
-
-            {/* 언어 전환 버튼 */}
-            <LanguageSwitcher />
           </div>
 
           {/* 모바일 메뉴 버튼 */}

@@ -1,8 +1,13 @@
+"use client";
+
 import Link from "next/link";
-import { siteContent } from "@/data/content";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { getContent } from "@/data/translations";
 
 export default function Footer() {
-  const { footer } = siteContent;
+  const { language } = useLanguage();
+  const content = getContent(language);
+  const { footer } = content;
 
   return (
     <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 text-white mt-auto relative overflow-hidden">
