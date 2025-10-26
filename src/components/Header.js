@@ -1,9 +1,7 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { useLanguage } from "@/contexts/LanguageContext";
-import { getContent } from "@/data/translations";
-import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { getContent } from "@/data/translations";
 import LanguageSwitcher from "./LanguageSwitcher";
