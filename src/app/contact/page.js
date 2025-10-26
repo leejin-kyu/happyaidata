@@ -270,7 +270,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-1">주소</h3>
-                    <p>서울특별시 강남구 봉은사로 129길 1003호</p>
+                    <p className="whitespace-nowrap">서울특별시 강남구 봉은사로 129길 1003호</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">직접 방문 가능 (사전 예약 필수)</p>
                   </div>
                 </div>
