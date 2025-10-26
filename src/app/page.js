@@ -51,10 +51,10 @@ export default function Home() {
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4 sm:mb-6 md:mb-8 leading-snug">
                 {home.hero.subtitle}
               </p>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 mb-4 sm:mb-6 md:mb-8 leading-relaxed whitespace-pre-line">
+              <p className="text-sm sm:text-base md:text-lg text-gray-800 dark:text-gray-300 mb-4 sm:mb-6 md:mb-8 leading-relaxed whitespace-pre-line font-medium">
                 {home.hero.description}
               </p>
-              <p className="text-xs sm:text-sm md:text-base text-gray-500 dark:text-gray-500 mb-8 sm:mb-12 md:mb-16">
+              <p className="text-xs sm:text-sm md:text-base text-gray-700 dark:text-gray-400 mb-8 sm:mb-12 md:mb-16 font-medium">
                 {home.hero.techStack}
               </p>
 
