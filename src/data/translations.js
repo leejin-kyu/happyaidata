@@ -18,6 +18,10 @@ export const translations = {
         bigdata: "빅데이터 분석",
         aillm: "AI LLM",
         contact: "문의/견적"
+      },
+      social: {
+        youtube: "https://www.youtube.com/@HappyAI_0612",
+        blog: "https://blog.naver.com/happynlp0612"
       }
     },
 
@@ -51,6 +55,10 @@ export const translations = {
         email: "contact@happyaidata.kr",
         phone: "02-1234-5678",
         address: "서울특별시 강남구 테헤란로 123"
+      },
+      social: {
+        youtube: "https://www.youtube.com/@HappyAI_0612",
+        blog: "https://blog.naver.com/happynlp0612"
       },
       copyright: "© 2025 HappyAI. All rights reserved.",
       footerLinks: [
@@ -177,6 +185,10 @@ export const translations = {
         bigdata: "Big Data Analytics",
         aillm: "AI LLM",
         contact: "Contact"
+      },
+      social: {
+        youtube: "https://www.youtube.com/@HappyAI_0612",
+        blog: "https://blog.naver.com/happynlp0612"
       }
     },
 
@@ -210,6 +222,10 @@ export const translations = {
         email: "contact@happyaidata.kr",
         phone: "02-1234-5678",
         address: "123 Teheran-ro, Gangnam-gu, Seoul, Korea"
+      },
+      social: {
+        youtube: "https://www.youtube.com/@HappyAI_0612",
+        blog: "https://blog.naver.com/happynlp0612"
       },
       copyright: "© 2025 HappyAI. All rights reserved.",
       footerLinks: [
