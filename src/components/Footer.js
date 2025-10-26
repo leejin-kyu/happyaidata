@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 text-white mt-auto relative overflow-hidden">
-      {/* 배경 글로우 ?�과 - ?�하�?*/}
+      {/* 배경 글로우 효과 - 약하게 */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl"></div>
@@ -15,7 +15,7 @@ export default function Footer() {
       {/* Main Footer */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14 md:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-10 md:mb-12">
-          {/* ?�사 ?�보 */}
+          {/* 회사 정보 */}
           <div className="lg:col-span-1">
             <h3 className="text-xl sm:text-2xl font-black mb-3 sm:mb-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-sky-400 bg-clip-text text-transparent">
               {footer.company.title}
@@ -24,7 +24,7 @@ export default function Footer() {
               {footer.company.description}
             </p>
 
-            {/* ?�셜 미디??*/}
+            {/* 소셜 미디어 */}
             <div className="flex space-x-3">
               <a
                 href={footer.social.youtube}
@@ -69,20 +69,20 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* ?�루??*/}
+          {/* 솔루션 */}
           <div>
             <h3 className="text-base sm:text-lg font-black mb-3 sm:mb-4 text-white">{footer.solutions.title}</h3>
             <ul className="space-y-2 sm:space-y-3 text-sm text-slate-300 dark:text-slate-400 font-medium">
               {footer.solutions.items.map((item, index) => (
                 <li key={index} className="flex items-start group">
-                  <span className="text-blue-400 group-hover:text-cyan-400 mr-2 transition-colors">??/span>
+                  <span className="text-blue-400 group-hover:text-cyan-400 mr-2 transition-colors">→</span>
                   <span className="group-hover:text-white transition-colors">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* ?�락�?*/}
+          {/* 연락처 */}
           <div>
             <h3 className="text-base sm:text-lg font-black mb-3 sm:mb-4 text-white">{footer.contact.title}</h3>
             <ul className="space-y-2 sm:space-y-3 text-sm text-slate-300 dark:text-slate-400 font-medium">
@@ -112,7 +112,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-slate-700/50 mb-6 sm:mb-8"></div>
 
-        {/* ?�?�권 �?링크 */}
+        {/* 저작권 및 링크 */}
         <div className="text-center">
           <p className="text-slate-400 dark:text-slate-500 text-xs sm:text-sm mb-3 sm:mb-4 font-medium">{footer.copyright}</p>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
@@ -125,7 +125,7 @@ export default function Footer() {
                 className="text-slate-400 dark:text-slate-500 hover:text-white text-xs sm:text-sm flex items-center transition-colors font-medium"
               >
                 {link.text}
-                {link.text === '기업?�개?? && (
+                {link.text === '기업소개서' && (
                   <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>

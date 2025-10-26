@@ -6,9 +6,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
-      {/* ?�어�??�션 - ?�플??컬러 */}
+      {/* 히어로 섹션 - 심플한 컬러 */}
       <section className="relative bg-gradient-to-br from-slate-50 via-blue-50/20 to-slate-50 dark:from-slate-950 dark:via-blue-950/20 dark:to-slate-950 py-16 sm:py-24 md:py-40 lg:py-48 overflow-hidden">
-        {/* AI ?�경�?배경 ?�턴 - ?�?�?�게 */}
+        {/* AI 신경망 배경 패턴 - 은은하게 */}
         <div className="absolute inset-0 opacity-[0.025] dark:opacity-[0.05]">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -33,7 +33,7 @@ export default function Home() {
           </svg>
         </div>
 
-        {/* 글로우 ?�과 ?�거 (?�플?�게) */}
+        {/* 글로우 효과 제거 (심플하게) */}
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
@@ -78,7 +78,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* ?�른�??�계/?�각 ?�소 - ?�플?�게 */}
+            {/* 오른쪽 통계/시각 요소 - 심플하게 */}
             <div className="relative animate-slide-up mt-8 md:mt-0">
               <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6">
                 {home.hero.stats.map((stat, index) => (
@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ?�심 ?�루??- ?�플 */}
+      {/* 핵심 솔루션 - 심플 */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white dark:bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 sm:mb-16 md:mb-20 text-center">
@@ -162,7 +162,7 @@ export default function Home() {
                 <ul className="relative space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                   {solution.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
-                      <span className="text-blue-600 dark:text-blue-400 font-bold mr-2 sm:mr-3 text-lg">??/span>
+                      <span className="text-blue-600 dark:text-blue-400 font-bold mr-2 sm:mr-3 text-lg">→</span>
                       <span className="text-sm sm:text-base text-slate-700 dark:text-slate-300 font-medium">{feature}</span>
                     </li>
                   ))}
@@ -182,7 +182,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 기술 ?�택 */}
+      {/* 기술 스택 */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-slate-50 to-indigo-50/20 dark:from-slate-950 dark:to-blue-950/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 sm:mb-16 md:mb-20 text-center">
@@ -212,9 +212,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 주요 고객 - ?�플?�게 */}
+      {/* 주요 고객 - 심플하게 */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 text-white relative overflow-hidden">
-        {/* 배경 글로우 ?�하�?*/}
+        {/* 배경 글로우 약하게 */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500 rounded-full mix-blend-screen filter blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500 rounded-full mix-blend-screen filter blur-3xl"></div>
@@ -252,7 +252,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 최신 콘텐�?*/}
+      {/* 최신 콘텐츠 */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white dark:bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 sm:mb-16 md:mb-20 text-center">
@@ -325,7 +325,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA - ?�플 */}
+      {/* CTA - 심플 */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-blue-600 via-cyan-600 to-sky-600 dark:from-indigo-700 dark:via-violet-700 dark:to-fuchsia-700 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full filter blur-3xl"></div>
