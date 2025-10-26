@@ -148,56 +148,38 @@ export default function About() {
 
               {/* 본문 영역 */}
               <div className="p-10">
-                <div className="grid md:grid-cols-2 gap-10 mb-10">
-                  <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
-                    <div className="flex items-center mb-6">
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                        </svg>
-                      </div>
-                      <h4 className="text-2xl font-bold text-gray-900 dark:text-white">학력</h4>
+                {/* 학력 및 경력 통합 */}
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-10">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
                     </div>
-                    <ul className="space-y-4">
-                      <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700 dark:text-gray-300">동국대학교 AI 박사과정 수료 (LLM)</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700 dark:text-gray-300">국민대학교 석사 (인문학)</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700 dark:text-gray-300">국민대학교 학사 (공학)</span>
-                      </li>
-                    </ul>
+                    <h4 className="text-2xl font-bold text-gray-900 dark:text-white">학력 및 주요 경력</h4>
                   </div>
-
-                  <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
-                    <div className="flex items-center mb-6">
-                      <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                      <h4 className="text-2xl font-bold text-gray-900 dark:text-white">주요 경력</h4>
-                    </div>
-                    <ul className="space-y-4">
-                      <li className="flex items-start">
-                        <div className="w-2 h-2 bg-indigo-600 dark:bg-indigo-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700 dark:text-gray-300">해피AI 대표 (2023 ~ 현재)</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-2 h-2 bg-indigo-600 dark:bg-indigo-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700 dark:text-gray-300">스텔라비전 AI 연구원</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-2 h-2 bg-indigo-600 dark:bg-indigo-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700 dark:text-gray-300">Textom Analyst (빅데이터 분석)</span>
-                      </li>
-                    </ul>
-                  </div>
+                  <ul className="space-y-4">
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-700 dark:text-gray-300">AI 박사과정 수료</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-700 dark:text-gray-300">해피AI 대표 (2023 ~ 현재)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-700 dark:text-gray-300">SPRi 초빙연구원</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-700 dark:text-gray-300">정부출연연구기관 연구원</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-700 dark:text-gray-300">스텔라비전 AI 연구원</span>
+                    </li>
+                  </ul>
                 </div>
 
                 {/* 전문 분야 */}
