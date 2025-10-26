@@ -16,15 +16,16 @@ const geistMono = Geist_Mono({
 export const metadata = {
   metadataBase: new URL('https://happyaidata.vercel.app'),
   title: {
-    default: 'HappyAI - AI 빅데이터 분석 전문 기업 | ChatGPT·BERT·RAG 기반 솔루션',
+    default: 'HappyAI - AI 빅데이터 분석 전문 기업 | AI LLM 기반 솔루션',
     template: '%s | HappyAI'
   },
-  description: 'AI 기반 빅데이터 분석과 AI LLM 솔루션 전문 기업. ChatGPT, BERT, RAG 최신 AI 기술로 300+ 프로젝트 수행. TEXNOVA 빅데이터 분석, DOCUNOVA AI 챗봇 솔루션 제공.',
+  description: 'AI 기반 빅데이터 분석과 AI LLM 솔루션 전문 기업. AI LLM, Agent, RAG 등 최신 기술로 300+ 프로젝트 수행. TEXNOVA 빅데이터 분석, DOCUNOVA AI 챗봇 솔루션 제공.',
   keywords: [
     'AI 빅데이터 분석',
     'AI LLM',
+    'Agent',
     'ChatGPT',
-    'BERT',
+    'Claude',
     'RAG',
     '텍스트마이닝',
     '자연어처리',
@@ -51,7 +52,7 @@ export const metadata = {
     url: 'https://happyaidata.vercel.app',
     siteName: 'HappyAI',
     title: 'HappyAI - AI 빅데이터 분석 전문 기업',
-    description: 'ChatGPT, BERT, RAG 기반 AI 솔루션. 300+ 프로젝트 성공 경험의 AI 전문 기업.',
+    description: 'LLM, Agent, RAG 기반 AI 솔루션. 300+ 프로젝트 성공 경험의 AI 전문 기업.',
     images: [
       {
         url: '/og-image.jpg',
@@ -64,7 +65,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'HappyAI - AI 빅데이터 분석 전문 기업',
-    description: 'ChatGPT, BERT, RAG 기반 AI 솔루션 전문 기업',
+    description: 'LLM, Agent, RAG 기반 AI 솔루션 전문 기업',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -97,7 +98,7 @@ export default function RootLayout({ children }) {
           '@type': 'ImageObject',
           url: 'https://happyaidata.vercel.app/logo.png'
         },
-        description: 'AI 기반 빅데이터 분석과 AI LLM 솔루션 전문 기업. ChatGPT, BERT, RAG 최신 AI 기술로 300+ 프로젝트 수행',
+        description: 'AI 기반 빅데이터 분석과 AI LLM 솔루션 전문 기업. LLM, Agent, RAG 기반 AI 솔루션. 300+ 프로젝트 성공 경험의 AI 전문 기업.',
         founder: {
           '@type': 'Person',
           name: '이진규',
@@ -110,7 +111,8 @@ export default function RootLayout({ children }) {
         knowsAbout: [
           'AI 빅데이터 분석',
           'ChatGPT',
-          'BERT',
+          'LLM',
+          'Agent',
           'RAG',
           '텍스트마이닝',
           '자연어처리',
@@ -138,7 +140,7 @@ export default function RootLayout({ children }) {
         about: {
           '@id': 'https://happyaidata.vercel.app/#organization'
         },
-        description: 'AI 기반 빅데이터 분석과 AI LLM 솔루션 전문 기업. ChatGPT, BERT, RAG 최신 AI 기술로 300+ 프로젝트 수행. TEXNOVA 빅데이터 분석, DOCUNOVA AI 챗봇 솔루션 제공.',
+        description: 'AI 기반 빅데이터 분석과 AI LLM 솔루션 전문 기업.LLM, Agent, RAG 기반 AI  기술로 300+ 프로젝트 수행. TEXNOVA 빅데이터 분석, DOCUNOVA AI 챗봇 솔루션 제공.',
         inLanguage: 'ko-KR'
       }
     ]
