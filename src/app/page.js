@@ -60,7 +60,7 @@ export default function Home() {
                     key={index}
                     className="group relative bg-white dark:bg-slate-800 p-4 sm:p-6 md:p-8 lg:p-10 rounded-2xl sm:rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-600 hover:-translate-y-1 transform"
                   >
-                    <div className="relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black bg-gradient-to-r from-blue-600 via-cyan-600 to-sky-600 dark:from-blue-400 dark:via-cyan-400 dark:to-sky-400 bg-clip-text text-transparent mb-2 sm:mb-3 leading-tight break-words">
+                    <div className="relative text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black bg-gradient-to-r from-blue-600 via-cyan-600 to-sky-600 dark:from-blue-400 dark:via-cyan-400 dark:to-sky-400 bg-clip-text text-transparent mb-2 sm:mb-3 leading-tight whitespace-nowrap overflow-hidden">
                       {stat.number}
                     </div>
                     <div className="relative text-xs sm:text-sm font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wide">
