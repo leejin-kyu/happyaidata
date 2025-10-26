@@ -1,13 +1,8 @@
-"use client";
-
 import Link from "next/link";
-import { useLanguage } from "@/contexts/LanguageContext";
-import { getContent } from "@/data/translations";
+import { siteContent } from "@/data/content";
 
 export default function Home() {
-  const { language } = useLanguage();
-  const content = getContent(language);
-  const { home } = content;
+  const { home } = siteContent;
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950">

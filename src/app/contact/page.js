@@ -1,14 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { useLanguage } from "@/contexts/LanguageContext";
-import { getContent } from "@/data/translations";
 
 export default function Contact() {
   const [showMeetingModal, setShowMeetingModal] = useState(false);
-  const { language } = useLanguage();
-  const content = getContent(language);
-  const { contact } = content;
 
   const handleGoogleMeetBooking = () => {
     // Google Calendar 이벤트 생성 URL
@@ -50,11 +45,12 @@ export default function Contact() {
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-slide-up animation-delay-200">
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                {contact.title}
+                문의 · 견적
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed animate-slide-up animation-delay-400">
-              {contact.subtitle}
+              AI 솔루션 도입이 궁금하신가요?<br />
+              전문가가 맞춤형 상담과 견적을 제공해드립니다
             </p>
           </div>
         </div>

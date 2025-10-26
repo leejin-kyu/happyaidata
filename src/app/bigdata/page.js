@@ -2,14 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { useLanguage } from "@/contexts/LanguageContext";
-import { getContent } from "@/data/translations";
 
 export default function BigData() {
   const [selectedProject, setSelectedProject] = useState(null);
-  const { language } = useLanguage();
-  const content = getContent(language);
-  const { bigdata } = content;
 
   const projectDetails = {
     "한국교육과정평가원-2025": {
@@ -74,10 +69,10 @@ export default function BigData() {
               </span>
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-              {bigdata.title}
+              AI 빅데이터 분석
             </h1>
             <p className="text-2xl md:text-3xl font-medium text-gray-700 dark:text-gray-300 mb-8">
-              {bigdata.subtitle}
+              ChatGPT·BERT 기반 텍스트마이닝 전문
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
               언론기사·SNS·논문에서 인사이트를 도출하는<br />

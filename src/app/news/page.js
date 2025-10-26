@@ -1,13 +1,4 @@
-"use client";
-
-import { useLanguage } from "@/contexts/LanguageContext";
-import { getContent } from "@/data/translations";
-
 export default function News() {
-  const { language } = useLanguage();
-  const content = getContent(language);
-  const { news } = content;
-
   const newsItems = [
     {
       id: 1,
@@ -69,10 +60,10 @@ export default function News() {
               </span>
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-              {news.title}
+              회사 소식
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
-              {news.subtitle}
+              해피AI의 최신 소식, 저서 출간, 솔루션 출시, 산학협력 및 연구 활동을 공유합니다
             </p>
           </div>
         </div>
