@@ -78,7 +78,7 @@ export const siteContent = {
       badge: "300+ Projects · Trusted by Government & Enterprises",
       title: "AI 전문 기업",
       subtitle: "AI 기반 빅데이터 분석 × AI LLM 솔루션",
-      description: "최신 AI 기술과 10년 이상의 연구 경험으로\n고품질 맞춤형 AI 솔루션을 제공합니다",
+      description: "최신 AI 기술과 10년 이상의 개발 및 연구 경험으로\n고품질 맞춤형 AI 솔루션을 제공합니다",
       techStack: "ChatGPT · BERT · RAG 등 최신 AI 기술 활용 · 텍스트마이닝 · 자연어처리 전문",
       buttons: {
         bigdata: {

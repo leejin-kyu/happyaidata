@@ -60,7 +60,7 @@ export default function About() {
               AI와 빅데이터 분석 전문 기업
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
-              10년 이상의 연구 경험과 300+ 프로젝트 수행<br />
+              10년 이상의 개발 및 연구 경험과 300+ 프로젝트 수행<br />
               ChatGPT·BERT·RAG 최신 AI 기술 활용
             </p>
 
