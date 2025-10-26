@@ -20,7 +20,7 @@ export default function Contact() {
     const startTime = nextWeek.toISOString().replace(/-|:|\.\d\d\d/g, '');
     const endTimeStr = endTime.toISOString().replace(/-|:|\.\d\d\d/g, '');
 
-    const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}&dates=${startTime}/${endTimeStr}&add=contact@happyaidata.kr`;
+    const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}&dates=${startTime}/${endTimeStr}&add=leejinkyu0612@naver.com`;
 
     window.open(googleCalendarUrl, '_blank');
   };
@@ -200,7 +200,7 @@ export default function Contact() {
                   </p>
                   <div className="space-y-2">
                     <a
-                      href="mailto:contact@happyaidata.kr"
+                      href="mailto:leejinkyu0612@naver.com"
                       className="w-full flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold py-3 px-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md"
                     >
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -209,7 +209,7 @@ export default function Contact() {
                       이메일로 문의
                     </a>
                     <a
-                      href="tel:02-1234-5678"
+                      href="tel:010-9973-2113"
                       className="w-full flex items-center justify-center bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 px-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md"
                     >
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -245,7 +245,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-1">이메일</h3>
-                    <p className="text-blue-600 dark:text-blue-400">contact@happyaidata.kr</p>
+                    <p className="text-blue-600 dark:text-blue-400">leejinkyu0612@naver.com</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">24시간 이내 답변</p>
                   </div>
                 </div>
@@ -257,7 +257,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-1">전화</h3>
-                    <p>02-1234-5678</p>
+                    <p>010-9973-2113</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">평일 09:00 - 18:00</p>
                   </div>
                 </div>
@@ -270,7 +270,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-1">주소</h3>
-                    <p>서울특별시 강남구 테헤란로 123</p>
+                    <p>서울특별시 강남구 봉은사로 129길 1003호</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">직접 방문 가능 (사전 예약 필수)</p>
                   </div>
                 </div>
@@ -487,7 +487,7 @@ export default function Contact() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in animation-delay-400">
             <a
-              href="mailto:contact@happyaidata.kr"
+              href="mailto:leejinkyu0612@naver.com"
               className="inline-flex items-center justify-center bg-white text-purple-600 hover:bg-gray-100 font-bold px-8 py-4 rounded-full text-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -496,7 +496,7 @@ export default function Contact() {
               이메일 문의
             </a>
             <a
-              href="tel:02-1234-5678"
+              href="tel:010-9973-2113"
               className="inline-flex items-center justify-center bg-transparent border-2 border-white hover:bg-white hover:text-purple-600 font-bold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

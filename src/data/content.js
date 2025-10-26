@@ -53,9 +53,9 @@ export const siteContent = {
     },
     contact: {
       title: "연락처",
-      email: "contact@happyaidata.kr",
-      phone: "02-1234-5678",
-      address: "서울특별시 강남구 테헤란로 123"
+      email: "leejinkyu0612@naver.com",
+      phone: "010-9973-2113",
+      address: "서울특별시 강남구 봉은사로 129길 1003호"
     },
     social: {
       title: "Follow Us",
