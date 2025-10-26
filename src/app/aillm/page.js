@@ -2,9 +2,14 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { getContent } from "@/data/translations";
 
 export default function AILLM() {
   const [showCases, setShowCases] = useState(false);
+  const { language } = useLanguage();
+  const content = getContent(language);
+  const { aillm } = content;
 
   return (
     <div className="min-h-screen">
@@ -21,10 +26,10 @@ export default function AILLM() {
               </span>
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-              AI LLM RAG 솔루션
+              {aillm.title}
             </h1>
             <p className="text-2xl md:text-3xl font-medium text-gray-700 dark:text-gray-300 mb-8">
-              ChatGPT·Claude 기반 지능형 문서 분석
+              {aillm.subtitle}
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
               RAG 기술로 문서를 이해하고<br />

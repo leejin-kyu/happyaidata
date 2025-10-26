@@ -164,6 +164,36 @@ export const translations = {
           { text: "사례 보기", href: "/cases", primary: false }
         ]
       }
+    },
+
+    // About Page (회사소개)
+    about: {
+      title: "회사소개",
+      subtitle: "AI와 빅데이터 분석 전문 기업"
+    },
+
+    // News Page (회사소식)
+    news: {
+      title: "회사 소식",
+      subtitle: "해피AI의 최신 소식, 저서 출간, 솔루션 출시, 산학협력 및 연구 활동을 공유합니다"
+    },
+
+    // Big Data Page (빅데이터 분석)
+    bigdata: {
+      title: "AI 빅데이터 분석",
+      subtitle: "ChatGPT·BERT 기반 지능형 텍스트 분석"
+    },
+
+    // AI LLM Page
+    aillm: {
+      title: "AI LLM RAG 솔루션",
+      subtitle: "ChatGPT·Claude 기반 지능형 문서 분석"
+    },
+
+    // Contact Page (문의/견적)
+    contact: {
+      title: "문의 · 견적",
+      subtitle: "AI 솔루션 도입이 궁금하신가요?\n전문가가 맞춤형 상담과 견적을 제공해드립니다"
     }
   },
 
@@ -331,6 +361,36 @@ export const translations = {
           { text: "View Case Studies", href: "/cases", primary: false }
         ]
       }
+    },
+
+    // About Page
+    about: {
+      title: "About Us",
+      subtitle: "AI and Big Data Analytics Experts"
+    },
+
+    // News Page
+    news: {
+      title: "Company News",
+      subtitle: "Latest news, publications, solution launches, industry-academia collaborations, and research activities from HappyAI"
+    },
+
+    // Big Data Page
+    bigdata: {
+      title: "AI Big Data Analytics",
+      subtitle: "ChatGPT·BERT-based Intelligent Text Analytics"
+    },
+
+    // AI LLM Page
+    aillm: {
+      title: "AI LLM RAG Solutions",
+      subtitle: "ChatGPT·Claude-based Intelligent Document Analysis"
+    },
+
+    // Contact Page
+    contact: {
+      title: "Contact · Quote",
+      subtitle: "Curious about AI solution implementation?\nExperts provide customized consultation and quotes"
     }
   }
 };
