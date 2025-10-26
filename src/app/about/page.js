@@ -165,19 +165,19 @@ export default function About() {
                     </li>
                     <li className="flex items-start">
                       <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300">해피AI 대표 (2023 ~ 현재)</span>
+                      <span className="text-gray-700 dark:text-gray-300">해피AI 대표 (2023 ~ 현재) 현</span>
                     </li>
                     <li className="flex items-start">
                       <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300">SPRi 초빙연구원</span>
+                      <span className="text-gray-700 dark:text-gray-300">SPRi 초빙연구원 전</span>
                     </li>
                     <li className="flex items-start">
                       <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300">정부출연연구기관 연구원</span>
+                      <span className="text-gray-700 dark:text-gray-300">정부출연연구기관 연구원 전</span>
                     </li>
                     <li className="flex items-start">
                       <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300">스텔라비전 AI 연구원</span>
+                      <span className="text-gray-700 dark:text-gray-300">스텔라비전 AI 연구원 전</span>
                     </li>
                   </ul>
                 </div>
