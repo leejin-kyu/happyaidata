@@ -94,7 +94,7 @@ export const siteContent = {
         { number: "300+", label: "프로젝트 수행" },
         { number: "10+", label: "Years Experience" },
         { number: "AI", label: "LLM & BigData" },
-        { number: "RAG", label: "Latest Tech" }
+        { number: "RAG", label: "AGENT RAG" }
       ]
     },
 
