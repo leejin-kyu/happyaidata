@@ -59,6 +59,7 @@ export default function News() {
   const [showPasswordModal, setShowPasswordModal] = useState(false);
   const [passwordInput, setPasswordInput] = useState('');
   const [pendingAction, setPendingAction] = useState(null);
+  const [editingId, setEditingId] = useState(null);
   const [formData, setFormData] = useState({
     category: "솔루션",
     title: "",
@@ -134,24 +135,65 @@ export default function News() {
     }
   };
 
-  // 뉴스 추가
+  // 수정할 뉴스 불러오기
+  const handleEdit = (item) => {
+    setEditingId(item.id);
+    setFormData({
+      category: item.category,
+      title: item.title,
+      date: item.date,
+      publisher: item.publisher || "",
+      description: item.description,
+      link: item.link || "",
+      imageFile: null,
+      imagePreview: typeof item.image === 'string' && item.image.startsWith('data:') ? item.image : null,
+      iconType: typeof item.image === 'string' && !item.image.startsWith('data:') ? item.image : "product"
+    });
+    setShowForm(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // 뉴스 추가/수정
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const newNews = {
-      id: Date.now(),
-      category: formData.category,
-      title: formData.title,
-      date: formData.date,
-      publisher: formData.publisher || undefined,
-      description: formData.description,
-      link: formData.link || undefined,
-      image: formData.imagePreview || formData.iconType
-    };
+    if (editingId) {
+      // 수정 모드
+      const updatedNews = newsItems.map(item =>
+        item.id === editingId
+          ? {
+              ...item,
+              category: formData.category,
+              title: formData.title,
+              date: formData.date,
+              publisher: formData.publisher || undefined,
+              description: formData.description,
+              link: formData.link || undefined,
+              image: formData.imagePreview || formData.iconType
+            }
+          : item
+      );
+      setNewsItems(updatedNews);
+      localStorage.setItem('happyai_news', JSON.stringify(updatedNews));
+      setEditingId(null);
+    } else {
+      // 새 글 작성 모드
+      const newNews = {
+        id: Date.now(),
+        category: formData.category,
+        title: formData.title,
+        date: formData.date,
+        publisher: formData.publisher || undefined,
+        description: formData.description,
+        link: formData.link || undefined,
+        image: formData.imagePreview || formData.iconType
+      };
 
-    const updatedNews = [newNews, ...newsItems];
-    setNewsItems(updatedNews);
-    localStorage.setItem('happyai_news', JSON.stringify(updatedNews));
+      const updatedNews = [newNews, ...newsItems];
+      setNewsItems(updatedNews);
+      localStorage.setItem('happyai_news', JSON.stringify(updatedNews));
+      setCurrentPage(1); // 첫 페이지로 이동
+    }
 
     // 폼 초기화
     setFormData({
@@ -166,7 +208,6 @@ export default function News() {
       iconType: "product"
     });
     setShowForm(false);
-    setCurrentPage(1); // 첫 페이지로 이동
   };
 
   // 뉴스 삭제
@@ -314,6 +355,9 @@ export default function News() {
       {showForm && isAuthenticated && (
         <section className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 py-8">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              {editingId ? '소식 수정' : '새 소식 작성'}
+            </h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -448,11 +492,25 @@ export default function News() {
                   type="submit"
                   className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
                 >
-                  등록하기
+                  {editingId ? '수정 완료' : '등록하기'}
                 </button>
                 <button
                   type="button"
-                  onClick={() => setShowForm(false)}
+                  onClick={() => {
+                    setShowForm(false);
+                    setEditingId(null);
+                    setFormData({
+                      category: "솔루션",
+                      title: "",
+                      date: new Date().toISOString().split('T')[0],
+                      publisher: "",
+                      description: "",
+                      link: "",
+                      imageFile: null,
+                      imagePreview: null,
+                      iconType: "product"
+                    });
+                  }}
                   className="flex-1 bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-700 text-gray-800 dark:text-white font-bold py-3 px-6 rounded-lg transition-colors"
                 >
                   취소
@@ -545,15 +603,26 @@ export default function News() {
                         </a>
                       )}
                       {isAuthenticated && (
-                        <button
-                          onClick={() => handleDelete(item.id)}
-                          className="inline-flex items-center text-red-600 dark:text-red-400 font-bold hover:underline"
-                        >
-                          <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                          </svg>
-                          삭제
-                        </button>
+                        <>
+                          <button
+                            onClick={() => handleEdit(item)}
+                            className="inline-flex items-center text-green-600 dark:text-green-400 font-bold hover:underline"
+                          >
+                            <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            </svg>
+                            수정
+                          </button>
+                          <button
+                            onClick={() => handleDelete(item.id)}
+                            className="inline-flex items-center text-red-600 dark:text-red-400 font-bold hover:underline"
+                          >
+                            <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                            삭제
+                          </button>
+                        </>
                       )}
                     </div>
                   </div>
