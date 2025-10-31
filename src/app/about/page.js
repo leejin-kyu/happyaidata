@@ -356,6 +356,121 @@ export default function About() {
         </div>
       </section>
 
+      {/* 협력 기관 */}
+      <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+              협력 기관
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">
+              HappyAI와 함께하는 파트너
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/한국교육과정평가원.png"
+                alt="한국교육과정평가원"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/소프트웨어정책연구소.png"
+                alt="소프트웨어정책연구소"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/한국전력공사.jpg"
+                alt="한국전력공사"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/한국전력기술.jpg"
+                alt="한국전력기술"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/서울대학교.png"
+                alt="서울대학교"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/고려대학교민족문화연구원.jpg"
+                alt="고려대학교 민족문화연구원"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/국립산림과학원.jpg"
+                alt="국립산림과학원"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/한국보건의료연구원.png"
+                alt="한국보건의료연구원"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/과학기술정책연구소.png"
+                alt="과학기술정책연구소"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/한국데이터산업진흥원.png"
+                alt="한국데이터산업진흥원"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/서울AI재단.jpg"
+                alt="서울AI재단"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/경기도교육청.jpg"
+                alt="경기도교육청"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/강릉시청소년상담복지센터.png"
+                alt="강릉시청소년상담복지센터"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 flex items-center justify-center border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
+              <img
+                src="/partners/티에스케이.jpg"
+                alt="티에스케이"
+                className="max-h-20 w-auto object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 비전 및 핵심 가치 */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
