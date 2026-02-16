@@ -15,7 +15,6 @@ export const siteContent = {
     menu: {
       home: "홈",
       about: "회사소개",
-      news: "회사소식",
       bigdata: "빅데이터 분석",
       aillm: "AI LLM",
       contact: "문의/견적"
@@ -36,7 +35,6 @@ export const siteContent = {
       title: "빠른 링크",
       links: [
         { text: "회사소개", href: "/about" },
-        { text: "회사소식", href: "/news" },
         { text: "빅데이터 분석", href: "/bigdata" },
         { text: "AI LLM", href: "/aillm" },
         { text: "문의하기", href: "/contact" }

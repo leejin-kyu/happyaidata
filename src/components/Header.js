@@ -33,12 +33,6 @@ export default function Header() {
               회사소개
             </Link>
             <Link
-              href="/news"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
-            >
-              회사소식
-            </Link>
-            <Link
               href="/bigdata"
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
             >
@@ -131,13 +125,6 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               회사소개
-            </Link>
-            <Link
-              href="/news"
-              className="block text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 py-2 px-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              회사소식
             </Link>
             <Link
               href="/bigdata"
