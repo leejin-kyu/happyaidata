@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export const metadata = {
   title: '회사소개 - AI 빅데이터 분석 전문 기업',
-  description: '10년 이상의 AI 연구 경험과 300+ 프로젝트 수행. ChatGPT, BERT, RAG 최신 AI 기술 활용. TEXNOVA 빅데이터 분석, DOCUNOVA AI LLM 솔루션 제공. 정부기관, 대기업, 대학과 함께하는 AI 전문 기업.',
+  description: '10년 이상의 AI 연구 경험과 300+ 프로젝트 수행. ChatGPT, Agent, MCP, RAG 최신 AI 기술 활용. TEXNOVA 빅데이터 분석, DOCUNOVA AI LLM 솔루션 제공. 정부기관, 대기업, 대학과 함께하는 AI 전문 기업.',
   keywords: ['AI 전문 기업', 'HappyAI', '이진규', 'AI 박사', '빅데이터 전문가', 'AI 연구원', 'TEXNOVA', 'DOCUNOVA', 'AI 솔루션'],
   openGraph: {
     title: 'HappyAI 회사소개 - AI 빅데이터 분석 전문 기업',
-    description: '10년 이상의 AI 연구 경험과 300+ 프로젝트 수행 실적. ChatGPT, BERT, RAG 최신 AI 기술 전문 기업',
+    description: '10년 이상의 AI 연구 경험과 300+ 프로젝트 수행 실적. ChatGPT, Agent, MCP, RAG 최신 AI 기술 전문 기업',
     type: 'website'
   }
 };
@@ -62,7 +62,7 @@ export default function About() {
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
               10년 이상의 개발 및 연구 경험과 300+ 프로젝트 수행<br />
-              ChatGPT·BERT·RAG 최신 AI 기술 활용
+              ChatGPT·Agent·MCP·RAG 최신 AI 기술 활용
             </p>
 
             <div className="flex justify-center">
@@ -92,7 +92,7 @@ export default function About() {
               <strong>AI 기반 빅데이터 분석</strong>과 <strong>AI LLM 솔루션</strong>을 제공합니다
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-              ChatGPT, BERT, RAG 등 최신 AI 기술을 실무에 적용하여<br />
+              ChatGPT, Agent, MCP, RAG 등 최신 AI 기술을 실무에 적용하여<br />
               고객의 업무 혁신을 이끌어냅니다
             </p>
           </div>
@@ -340,7 +340,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">TEXNOVA</h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                ChatGPT·BERT 기반 빅데이터 분석 플랫폼
+                ChatGPT·LLM 기반 빅데이터 분석 플랫폼
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start">
@@ -611,7 +611,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">혁신</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                ChatGPT·BERT·RAG 등<br />최신 AI 기술을 실무에 적용
+                ChatGPT·Agent·MCP·RAG 등<br />최신 AI 기술을 실무에 적용
               </p>
             </div>
           </div>

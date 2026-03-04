@@ -77,7 +77,7 @@ export const siteContent = {
       title: "AI 전문 기업",
       subtitle: "AI 기반 빅데이터 분석 × AI LLM 솔루션",
       description: "최신 AI 기술과 10년 이상의 개발 및 연구 경험으로\n고품질 맞춤형 AI 솔루션을 제공합니다",
-      techStack: "ChatGPT · BERT · RAG 등 최신 AI 기술 활용 · 텍스트마이닝 · 자연어처리 전문",
+      techStack: "ChatGPT · Agent · MCP · RAG 등 최신 AI 기술 활용 · 텍스트마이닝 · 자연어처리 전문",
       buttons: {
         bigdata: {
           text: "AI 빅데이터 분석",
@@ -103,10 +103,10 @@ export const siteContent = {
       items: [
         {
           name: "TEXNOVA - AI 빅데이터 분석",
-          description: "ChatGPT, BERT 기반 텍스트 빅데이터 분석 플랫폼으로\n복잡한 데이터에서 인사이트를 발굴합니다",
+          description: "ChatGPT, LLM 기반 텍스트 빅데이터 분석 플랫폼으로\n복잡한 데이터에서 인사이트를 발굴합니다",
           features: [
             "텍스트마이닝 & 자연어처리",
-            "ChatGPT·BERT AI 분석",
+            "ChatGPT·Agent·MCP AI 분석",
             "데이터 시각화 대시보드"
           ],
           link: "/bigdata",
@@ -132,7 +132,7 @@ export const siteContent = {
       subtitle: "검증된 최신 AI 기술로 솔루션을 구현합니다",
       technologies: [
         { name: "ChatGPT", description: "OpenAI LLM" },
-        { name: "BERT", description: "NLP Model" },
+        { name: "Agent MCP", description: "AI Agent" },
         { name: "RAG", description: "Retrieval-Augmented" },
         { name: "Claude", description: "Anthropic AI" }
       ]

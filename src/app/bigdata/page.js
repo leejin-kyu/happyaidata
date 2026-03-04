@@ -72,7 +72,7 @@ export default function BigData() {
               AI 빅데이터 분석
             </h1>
             <p className="text-2xl md:text-3xl font-medium text-gray-700 dark:text-gray-300 mb-8">
-              ChatGPT·BERT 기반 텍스트마이닝 전문
+              ChatGPT·Agent·MCP 기반 텍스트마이닝 전문
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
               언론기사·SNS·논문에서 인사이트를 도출하는<br />
@@ -118,7 +118,7 @@ export default function BigData() {
                   텍스트마이닝 & 자연어처리
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                  ChatGPT, BERT를 활용한 고급 자연어 분석
+                  ChatGPT, Agent, MCP를 활용한 고급 자연어 분석
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
@@ -382,7 +382,7 @@ export default function BigData() {
                 <ul className="space-y-2 text-gray-700 dark:text-gray-300">
                   <li>• LDA, DTM, STM 토픽모델링</li>
                   <li>• BERTopic, LLM 임베딩 고급 기법</li>
-                  <li>• BERT, LSTM, ChatGPT 감성분석</li>
+                  <li>• LLM, Agent, ChatGPT 감성분석</li>
                 </ul>
               </div>
               <div>
@@ -1067,7 +1067,7 @@ export default function BigData() {
                     AI 언어모델 기반 사용자 리뷰 토픽분석 및 감성분석을 통한 제품 개선 인사이트 도출
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="text-xs bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 px-2 py-1 rounded">BERT</span>
+                    <span className="text-xs bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 px-2 py-1 rounded">Agent MCP</span>
                     <span className="text-xs bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 px-2 py-1 rounded">토픽모델링</span>
                     <span className="text-xs bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 px-2 py-1 rounded">감성분석</span>
                   </div>

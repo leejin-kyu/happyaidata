@@ -2,10 +2,10 @@ export default function Blog() {
   const posts = [
     {
       id: 1,
-      title: "ChatGPT와 BERT로 구현하는 빅데이터 분석",
+      title: "ChatGPT와 Agent MCP로 구현하는 빅데이터 분석",
       date: "2025-10-01",
       category: "트렌드",
-      excerpt: "ChatGPT와 BERT를 활용한 AI 기반 빅데이터 분석의 최신 트렌드와 실무 적용 방법을 살펴봅니다.",
+      excerpt: "ChatGPT와 Agent MCP를 활용한 AI 기반 빅데이터 분석의 최신 트렌드와 실무 적용 방법을 살펴봅니다.",
       readTime: "5분"
     },
     {
@@ -69,7 +69,7 @@ export default function Blog() {
               기술 블로그
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
-              ChatGPT, BERT, RAG 등 AI 기술과 빅데이터 분석에 대한 최신 트렌드, 기술 인사이트, 실전 노하우를 공유합니다
+              ChatGPT, Agent, MCP, RAG 등 AI 기술과 빅데이터 분석에 대한 최신 트렌드, 기술 인사이트, 실전 노하우를 공유합니다
             </p>
           </div>
         </div>
@@ -182,7 +182,7 @@ export default function Blog() {
             <p className="text-lg text-gray-600 dark:text-gray-400">자주 다루는 AI 및 빅데이터 기술 주제</p>
           </div>
           <div className="flex flex-wrap gap-3 justify-center">
-            {["ChatGPT", "BERT", "RAG", "AI LLM", "빅데이터분석", "텍스트마이닝", "자연어처리", "데이터파이프라인", "AI챗봇", "머신러닝"].map((tag) => (
+            {["ChatGPT", "Agent MCP", "RAG", "AI LLM", "빅데이터분석", "텍스트마이닝", "자연어처리", "데이터파이프라인", "AI챗봇", "머신러닝"].map((tag) => (
               <span
                 key={tag}
                 className="px-5 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-full text-sm text-gray-700 dark:text-gray-300 hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50 dark:hover:text-blue-400 dark:hover:bg-blue-900/20 cursor-pointer transition-all shadow-sm hover:shadow-md"

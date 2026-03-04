@@ -19,14 +19,14 @@ export const metadata = {
     default: 'HappyAI - AI 빅데이터 분석 전문 기업 | TEXNOVA·DOCUNOVA 솔루션',
     template: '%s | HappyAI'
   },
-  description: '10년 경력의 AI 전문가가 제공하는 맞춤형 AI 솔루션. TEXNOVA 텍스트 빅데이터 분석, DOCUNOVA AI 챗봇으로 300+ 공공·대기업 프로젝트 수행. ChatGPT, BERT, RAG, Claude 기반 최신 AI 기술.',
+  description: '10년 경력의 AI 전문가가 제공하는 맞춤형 AI 솔루션. TEXNOVA 텍스트 빅데이터 분석, DOCUNOVA AI 챗봇으로 300+ 공공·대기업 프로젝트 수행. ChatGPT, Agent, MCP, RAG, Claude 기반 최신 AI 기술.',
   keywords: [
     'AI 빅데이터 분석',
     'TEXNOVA',
     'DOCUNOVA',
     'AI LLM 솔루션',
     'ChatGPT',
-    'BERT',
+    'Agent MCP',
     'RAG',
     'Claude',
     '텍스트마이닝',
@@ -72,7 +72,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'HappyAI - AI 빅데이터 분석 전문 기업',
-    description: 'ChatGPT, BERT, RAG, Claude 기반 맞춤형 AI 솔루션 전문 기업',
+    description: 'ChatGPT, Agent, MCP, RAG, Claude 기반 맞춤형 AI 솔루션 전문 기업',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -139,7 +139,7 @@ export default function RootLayout({ children }) {
         knowsAbout: [
           'AI 빅데이터 분석',
           'ChatGPT',
-          'BERT',
+          'Agent MCP',
           'RAG',
           'Claude',
           '텍스트마이닝',
@@ -172,7 +172,7 @@ export default function RootLayout({ children }) {
         about: {
           '@id': 'https://www.happyaidata.kr/#organization'
         },
-        description: 'AI 기반 빅데이터 분석과 AI LLM 솔루션 전문 기업. ChatGPT, BERT, RAG 최신 AI 기술로 300+ 프로젝트 수행. TEXNOVA 빅데이터 분석, DOCUNOVA AI 챗봇 솔루션 제공.',
+        description: 'AI 기반 빅데이터 분석과 AI LLM 솔루션 전문 기업. ChatGPT, Agent, MCP, RAG 최신 AI 기술로 300+ 프로젝트 수행. TEXNOVA 빅데이터 분석, DOCUNOVA AI 챗봇 솔루션 제공.',
         inLanguage: 'ko-KR'
       },
       {

@@ -104,7 +104,7 @@ export default function Cases() {
                   금융 리스크 관리 AI 어시스턴트
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                  B은행은 수백만 건의 거래 데이터를 BERT로 분석하고, RAG 기반 AI LLM을 통해 리스크 담당자가
+                  B은행은 수백만 건의 거래 데이터를 AI LLM으로 분석하고, RAG 기반 AI LLM을 통해 리스크 담당자가
                   자연어로 질문하면 즉시 리스크 평가 리포트를 생성합니다. 복잡한 금융 규제도 AI가 해석하여 제공합니다.
                 </p>
                 <div className="space-y-3">
