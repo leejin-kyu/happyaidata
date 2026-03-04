@@ -360,7 +360,7 @@ export default function Contact() {
                 유지보수 및 기술 지원은 어떻게 제공되나요?
               </h3>
               <p className="text-gray-600 dark:text-gray-400 ml-6 leading-relaxed">
-                <span className="text-blue-600 dark:text-blue-400 font-bold">A.</span> 프로젝트 완료 후 12개월 무상 유지보수를 제공하며, 이후 유료 기술지원 계약을 통해
+                <span className="text-blue-600 dark:text-blue-400 font-bold">A.</span> 프로젝트 완료 후 1~3개월 무상 유지보수를 제공하며, 이후 유료 기술지원 계약을 통해
                 지속적인 업데이트와 기술지원을 받으실 수 있습니다.
               </p>
             </div>
