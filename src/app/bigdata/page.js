@@ -491,15 +491,17 @@ export default function BigData() {
           </div>
 
           <div className="text-center mt-12">
-            <Link
-              href="/contact"
+            <a
+              href="http://texnova.co.kr/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-10 py-4 text-base font-bold text-purple-600 bg-white hover:bg-gray-100 rounded-lg transition-all shadow-xl hover:shadow-2xl"
             >
-              TEXNOVA 도입 문의
+              TEXNOVA 바로가기
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
