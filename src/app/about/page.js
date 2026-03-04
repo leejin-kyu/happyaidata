@@ -66,7 +66,7 @@ export default function About() {
 
             <div className="flex justify-center">
               <a
-                href="https://drive.google.com/file/d/1xtvrIejY8SDXAdGIUSxDRUPASkfw-T71/view"
+                href="https://bit.ly/3N3gb19"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-600 hover:bg-blue-700 rounded transition-colors shadow-xl hover:shadow-xl"
