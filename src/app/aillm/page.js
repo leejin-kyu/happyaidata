@@ -466,7 +466,104 @@ export default function AILLM() {
         </div>
       </section>
 
-      {/* 주요 프로젝트 */}
+      {/* 금융권 LLM 도입 사례 */}
+      <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-semibold text-blue-600 dark:text-blue-400 tracking-wide uppercase mb-3">
+              Finance LLM Use Case
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+              금융권 LLM 도입
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">
+              금융&middot;카드&middot;보험사를 위한 맞춤형 LLM 솔루션
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 rounded-3xl overflow-hidden border border-blue-100 dark:border-gray-700 shadow-xl">
+              <div className="grid md:grid-cols-2 gap-0">
+                {/* 왼쪽: 금융 LLM 활용 영역 */}
+                <div className="p-8 md:p-10">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">금융권 LLM 활용 영역</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-start">
+                      <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-gray-900 dark:text-white text-sm">고객 상담 자동화</p>
+                        <p className="text-gray-600 dark:text-gray-400 text-xs mt-0.5">이벤트&middot;상품 안내, FAQ 자동 응답으로 상담사 효율 극대화</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-gray-900 dark:text-white text-sm">금융 문서 분석</p>
+                        <p className="text-gray-600 dark:text-gray-400 text-xs mt-0.5">약관&middot;계약서&middot;보고서 자동 요약 및 핵심 조항 추출</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-gray-900 dark:text-white text-sm">보안 RAG 시스템</p>
+                        <p className="text-gray-600 dark:text-gray-400 text-xs mt-0.5">내부망 Private LLM으로 고객 데이터 외부 유출 원천 차단</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-gray-900 dark:text-white text-sm">금융 QA 모델링</p>
+                        <p className="text-gray-600 dark:text-gray-400 text-xs mt-0.5">BERT 기반 금융 상품 질의응답 자동화 및 정확도 향상</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 오른쪽: 도입 효과 + CTA */}
+                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 p-8 md:p-10 text-white">
+                  <h3 className="text-2xl font-bold mb-6">도입 효과</h3>
+                  <div className="space-y-4 mb-8">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                      <div className="text-3xl font-bold mb-1">24/7</div>
+                      <p className="text-blue-200 text-sm">AI 자동 응답으로 상시 고객 서비스 제공</p>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                      <div className="text-3xl font-bold mb-1">90%+</div>
+                      <p className="text-blue-200 text-sm">단순 문의 자동 처리로 상담사 업무 부담 감소</p>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                      <div className="text-3xl font-bold mb-1">On-premise</div>
+                      <p className="text-blue-200 text-sm">금융 보안 규정 준수, 데이터 외부 유출 차단</p>
+                    </div>
+                  </div>
+                  <p className="text-blue-200 text-xs">
+                    해피AI는 금융권 대기업 BERT 기반 금융 QA 모델링 프로젝트를 수행한 경험이 있으며,
+                    Private LLM&middot;RAG 기반 보안 챗봇 구축 역량을 보유하고 있습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            {/* 주요 프로젝트 */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
