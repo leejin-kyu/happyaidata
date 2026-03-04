@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: '회사소개 - AI 빅데이터 분석 전문 기업',
@@ -138,10 +139,14 @@ export default function About() {
               {/* 헤더 영역 */}
               <div className="bg-gradient-to-br from-blue-600 to-indigo-600 dark:from-blue-700 dark:to-indigo-700 text-white p-10">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-                  <div className="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0 border-4 border-white/30">
-                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
+                  <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-white/30 shadow-xl">
+                    <Image
+                      src="/profile.jpg"
+                      alt="이진규 대표"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="text-center md:text-left">
                     <h3 className="text-3xl md:text-4xl font-bold mb-1">이진규 (Lee JinKyu)</h3>
