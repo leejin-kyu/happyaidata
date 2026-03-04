@@ -59,13 +59,13 @@ export const siteContent = {
       title: "Follow Us",
       youtube: "https://www.youtube.com/@HappyAI_0612",
       blog: "https://blog.naver.com/happynlp0612",
-      brochure: "https://bit.ly/3N3gb19"
+      brochure: "https://drive.google.com/file/d/14rpWni82mGrV49qRG3hxKNgAgMhzmvVm/view"
     },
     copyright: "© 2025 HappyAI. All rights reserved.",
     footerLinks: [
       { text: "YouTube", href: "https://www.youtube.com/@HappyAI_0612" },
       { text: "Blog", href: "https://blog.naver.com/happynlp0612" },
-      { text: "기업소개서", href: "https://bit.ly/3N3gb19" }
+      { text: "기업소개서", href: "https://drive.google.com/file/d/14rpWni82mGrV49qRG3hxKNgAgMhzmvVm/view" }
     ]
   },
 

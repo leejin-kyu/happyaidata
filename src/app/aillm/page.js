@@ -114,15 +114,68 @@ export default function AILLM() {
         </div>
       </section>
 
+      {/* LLM 개발 서비스 영역 */}
+      <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+              LLM 개발&middot;구축 서비스
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">
+              기관 맞춤형 LLM 솔루션을 설계하고 구축합니다
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 border border-blue-100 dark:border-gray-700">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center mr-3">
+                  <span className="text-white font-bold text-sm">01</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white">Private LLM 구축 및 운영</h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">On-premise 환경에서 기관 데이터를 학습한 전용 LLM을 구축하고 안정적으로 운영합니다.</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 border border-blue-100 dark:border-gray-700">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center mr-3">
+                  <span className="text-white font-bold text-sm">02</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white">RAG 기반 지식검색 챗봇</h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">벡터DB와 LLM을 결합하여 기관 내부 문서를 기반으로 정확한 답변을 제공하는 챗봇 시스템을 개발합니다.</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 border border-blue-100 dark:border-gray-700">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-purple-600 rounded-xl flex items-center justify-center mr-3">
+                  <span className="text-white font-bold text-sm">03</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white">LLM Agent 시스템 설계</h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">워크플로우 자동화를 위한 AI Agent 시스템을 설계하고, 복잡한 업무를 자동으로 처리합니다.</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 border border-blue-100 dark:border-gray-700">
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-pink-600 rounded-xl flex items-center justify-center mr-3">
+                  <span className="text-white font-bold text-sm">04</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white">LoRA&middot;QLoRA 파인튜닝</h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">LoRA, QLoRA 기반 효율적 파인튜닝으로 도메인 특화 LLM을 구축합니다. SFT 및 RLHF 적용 가능.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 핵심 기능 */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-              핵심 기능
+              LLM 핵심 서비스
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400">
-              강력한 AI 기능으로 업무 효율을 높입니다
+              Private LLM 구축부터 AI Agent 시스템까지
             </p>
           </div>
 
@@ -254,7 +307,7 @@ export default function AILLM() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              DOCUNOVA
+              DocuNOVA
             </h2>
             <p className="text-xl opacity-90">
               AI LLM RAG 기반 지능형 문서 관리 솔루션
@@ -466,8 +519,26 @@ export default function AILLM() {
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white">국립산림과학원</h3>
                   <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full">공공</span>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">LLM 기반 용어 분석</p>
-                <p className="text-xs text-gray-500 dark:text-gray-500">Transformer 기반 산림복원 전문용어 텍스트마이닝</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">LLM 기반 산림 복원 빅데이터 분석</p>
+                <p className="text-xs text-gray-500 dark:text-gray-500">방대한 산림 복원 관련 문헌과 데이터를 LLM으로 분석하여 복원 전략 수립 지원</p>
+              </div>
+
+              <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow">
+                <div className="flex items-start justify-between mb-3">
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">국가 건설&middot;인프라 국책기관</h3>
+                  <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full">공공</span>
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">AI 기반 표준서식 입력 자동화</p>
+                <p className="text-xs text-gray-500 dark:text-gray-500">건설 인프라 비정형 문서를 AI가 자동 인식하여 표준 서식으로 변환 및 DB화</p>
+              </div>
+
+              <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow">
+                <div className="flex items-start justify-between mb-3">
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">중앙행정기관 (법률)</h3>
+                  <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full">공공</span>
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">판결문 범죄사실 항목 추출 LLM</p>
+                <p className="text-xs text-gray-500 dark:text-gray-500">비정형 판결문 데이터에서 핵심 범죄 사실과 법률 정보를 자동 추출하는 특화 LLM 개발</p>
               </div>
             </div>
           </div>
