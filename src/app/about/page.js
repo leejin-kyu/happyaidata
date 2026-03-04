@@ -129,113 +129,183 @@ export default function About() {
       <section className="py-24 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">대표이사</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400">AI 연구원 · 개발자</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">대표 소개</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">&ldquo;연구에서 끝나는 AI가 아닌, 조직에 적용되는 AI 전략을 제시합니다.&rdquo;</p>
           </div>
 
           <div className="max-w-5xl mx-auto">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 rounded-3xl shadow-2xl overflow-hidden border border-blue-100 dark:border-gray-700">
               {/* 헤더 영역 */}
-              <div className="bg-gradient-to-br from-blue-600 to-indigo-600 dark:from-blue-700 dark:to-indigo-700 text-white p-10 text-center">
-                <div className="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white/30">
-                  <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
+              <div className="bg-gradient-to-br from-blue-600 to-indigo-600 dark:from-blue-700 dark:to-indigo-700 text-white p-10">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+                  <div className="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0 border-4 border-white/30">
+                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                  </div>
+                  <div className="text-center md:text-left">
+                    <h3 className="text-3xl md:text-4xl font-bold mb-1">이진규 (Lee JinKyu)</h3>
+                    <p className="text-lg text-blue-100 mb-3">AI&middot;LLM&middot;빅데이터 분석 전문가</p>
+                    <p className="text-blue-200 text-sm">해피AI 대표 | 동국대학교 공학박사(인공지능) | 한성대학교 AI소프트웨어학과 겸임교수</p>
+                    <div className="flex flex-wrap gap-4 mt-4 justify-center md:justify-start">
+                      <div className="bg-white/15 backdrop-blur-sm rounded-lg px-4 py-2 text-center">
+                        <div className="text-2xl font-bold">200+</div>
+                        <div className="text-xs text-blue-200">프로젝트 수행</div>
+                      </div>
+                      <div className="bg-white/15 backdrop-blur-sm rounded-lg px-4 py-2 text-center">
+                        <div className="text-2xl font-bold">8+</div>
+                        <div className="text-xs text-blue-200">국제저명 제1저자 논문</div>
+                      </div>
+                      <div className="bg-white/15 backdrop-blur-sm rounded-lg px-4 py-2 text-center">
+                        <div className="text-2xl font-bold">박사</div>
+                        <div className="text-xs text-blue-200">인공지능 공학박사</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-3xl md:text-4xl font-bold mb-2">이진규 (Lee JinKyu)</h3>
-                <p className="text-xl text-blue-100">HappyAI 대표</p>
               </div>
 
               {/* 본문 영역 */}
               <div className="p-10">
-                {/* 학력 및 경력 통합 */}
+                <div className="grid md:grid-cols-2 gap-8 mb-10">
+                  {/* 주요 경력 */}
+                  <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
+                    <div className="flex items-center mb-6">
+                      <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-3">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900 dark:text-white">주요 경력</h4>
+                    </div>
+                    <ul className="space-y-3">
+                      <li className="flex items-start">
+                        <span className="text-xs text-blue-600 dark:text-blue-400 font-bold mt-0.5 mr-3 flex-shrink-0 w-20">2026 ~ 현재</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm">한성대학교 AI소프트웨어학과 겸임교수</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-xs text-blue-600 dark:text-blue-400 font-bold mt-0.5 mr-3 flex-shrink-0 w-20">2023 ~ 현재</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm">해피AI 대표 (생성형 AI&middot;빅데이터 전문기업)</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-xs text-blue-600 dark:text-blue-400 font-bold mt-0.5 mr-3 flex-shrink-0 w-20">2021 ~ 2023</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm">스텔라비전 AI 연구원</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-xs text-blue-600 dark:text-blue-400 font-bold mt-0.5 mr-3 flex-shrink-0 w-20">2018 ~ 2021</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm">국립산림과학원 빅데이터 분석 연구원</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* 핵심 전문 분야 */}
+                  <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
+                    <div className="flex items-center mb-6">
+                      <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mr-3">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900 dark:text-white">핵심 전문 분야</h4>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="bg-gradient-to-br from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-xs font-semibold shadow-md">생성형 AI&middot;LLM 실무 전략</span>
+                      <span className="bg-gradient-to-br from-indigo-500 to-indigo-600 text-white px-4 py-2 rounded-full text-xs font-semibold shadow-md">Private LLM&middot;RAG&middot;Agent 구축</span>
+                      <span className="bg-gradient-to-br from-purple-500 to-purple-600 text-white px-4 py-2 rounded-full text-xs font-semibold shadow-md">LLM 파인튜닝(LoRA&middot;RLHF)</span>
+                      <span className="bg-gradient-to-br from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-xs font-semibold shadow-md">텍스트마이닝&middot;NLP 분석</span>
+                      <span className="bg-gradient-to-br from-blue-600 to-blue-700 text-white px-4 py-2 rounded-full text-xs font-semibold shadow-md">AI 업무자동화 시스템</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 주요 기업 강의 실적 */}
                 <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-10">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-3">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                       </svg>
                     </div>
-                    <h4 className="text-2xl font-bold text-gray-900 dark:text-white">학력 및 주요 경력</h4>
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white">주요 강의&middot;교육</h4>
                   </div>
-                  <ul className="space-y-4">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="border border-gray-100 dark:border-gray-700 rounded-xl p-4">
+                      <p className="font-semibold text-gray-900 dark:text-white text-sm">삼성SDS</p>
+                      <p className="text-gray-600 dark:text-gray-400 text-xs mt-1">LangChain&middot;RAG 기반 LLM 프로그래밍 (2024)</p>
+                    </div>
+                    <div className="border border-gray-100 dark:border-gray-700 rounded-xl p-4">
+                      <p className="font-semibold text-gray-900 dark:text-white text-sm">KT</p>
+                      <p className="text-gray-600 dark:text-gray-400 text-xs mt-1">LLM/sLLM 애플리케이션 개발 교육 (2025)</p>
+                    </div>
+                    <div className="border border-gray-100 dark:border-gray-700 rounded-xl p-4">
+                      <p className="font-semibold text-gray-900 dark:text-white text-sm">서울디지털재단</p>
+                      <p className="text-gray-600 dark:text-gray-400 text-xs mt-1">LLM 이론 및 RAG 챗봇 개발 실무 (2024)</p>
+                    </div>
+                    <div className="border border-gray-100 dark:border-gray-700 rounded-xl p-4">
+                      <p className="font-semibold text-gray-900 dark:text-white text-sm">한성대학교</p>
+                      <p className="text-gray-600 dark:text-gray-400 text-xs mt-1">데이터마이닝&middot;머신러닝&middot;딥러닝 정규 강의 (2026~)</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 주요 연구 실적 */}
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-10">
+                  <div className="flex items-center mb-6">
+                    <div className="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center mr-3">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white">주요 연구 실적</h4>
+                  </div>
+                  <ul className="space-y-3">
                     <li className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300">AI 박사과정 수료</span>
+                      <span className="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs font-bold px-2 py-0.5 rounded mt-0.5 mr-3 flex-shrink-0">국제저명</span>
+                      <div>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm">Measuring and Mitigating Implicit Bias in LLMs</p>
+                        <p className="text-gray-500 dark:text-gray-400 text-xs">Connection Science, 2026 | 제1저자</p>
+                      </div>
                     </li>
                     <li className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300">현 해피AI 대표 (2023 ~ 현재)</span>
+                      <span className="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs font-bold px-2 py-0.5 rounded mt-0.5 mr-3 flex-shrink-0">국제저명</span>
+                      <div>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm">Improving Commonsense Bias Classification</p>
+                        <p className="text-gray-500 dark:text-gray-400 text-xs">IEEE Access, 2024 | 제1저자</p>
+                      </div>
                     </li>
                     <li className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300">전 SPRi 초빙연구원</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300">전 정부출연연구기관 연구원</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300">전 스텔라비전 AI 연구원</span>
+                      <span className="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs font-bold px-2 py-0.5 rounded mt-0.5 mr-3 flex-shrink-0">국제저명</span>
+                      <div>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm">Improving Generation of Sentiment Commonsense by Bias Mitigation</p>
+                        <p className="text-gray-500 dark:text-gray-400 text-xs">IEEE BigComp, 2023 | 제1저자</p>
+                      </div>
                     </li>
                   </ul>
                 </div>
 
-                {/* 전문 분야 */}
-                <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-10">
-                  <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">전문 분야</h4>
-                  <div className="flex flex-wrap gap-3 justify-center">
-                    <span className="bg-gradient-to-br from-blue-500 to-blue-600 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-md">AI LLM</span>
-                    <span className="bg-gradient-to-br from-indigo-500 to-indigo-600 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-md">자연어처리</span>
-                    <span className="bg-gradient-to-br from-purple-500 to-purple-600 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-md">빅데이터 분석</span>
-                    <span className="bg-gradient-to-br from-pink-500 to-pink-600 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-md">텍스트마이닝</span>
-                    <span className="bg-gradient-to-br from-blue-600 to-blue-700 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-md">RAG</span>
+                {/* 신뢰 기관 + 상세이력 링크 */}
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                  <p className="text-center text-sm font-semibold text-gray-500 dark:text-gray-400 mb-4">Trusted by Leading Organizations</p>
+                  <div className="flex flex-wrap gap-3 justify-center mb-6">
+                    <span className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-full text-xs font-semibold">삼성SDS</span>
+                    <span className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-full text-xs font-semibold">KT</span>
+                    <span className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-full text-xs font-semibold">한국전력공사</span>
+                    <span className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-full text-xs font-semibold">서울디지털재단</span>
+                    <span className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-full text-xs font-semibold">중앙행정기관</span>
+                    <span className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-full text-xs font-semibold">국립산림과학원</span>
                   </div>
-                </div>
-
-                {/* 주요 실적 */}
-                <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-10">
-                  <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">주요 실적</h4>
-                  <div className="grid grid-cols-3 gap-8">
-                    <div className="text-center">
-                      <div className="bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-2xl p-6 shadow-lg mb-3">
-                        <div className="text-4xl md:text-5xl font-bold">300+</div>
-                      </div>
-                      <div className="text-sm font-semibold text-gray-700 dark:text-gray-300">프로젝트 수행</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 text-white rounded-2xl p-6 shadow-lg mb-3">
-                        <div className="text-4xl md:text-5xl font-bold">15+</div>
-                      </div>
-                      <div className="text-sm font-semibold text-gray-700 dark:text-gray-300">SCI·KCI 논문</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-2xl p-6 shadow-lg mb-3">
-                        <div className="text-4xl md:text-5xl font-bold">10+</div>
-                      </div>
-                      <div className="text-sm font-semibold text-gray-700 dark:text-gray-300">교육 강의</div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* 저서 */}
-                <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center mr-4">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  <div className="text-center">
+                    <a
+                      href="https://bit.ly/jinkyu-profile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold text-sm transition-colors"
+                    >
+                      <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                       </svg>
-                    </div>
-                    <h4 className="text-2xl font-bold text-gray-900 dark:text-white">저서</h4>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-2 h-2 bg-amber-500 dark:bg-amber-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <div>
-                      <span className="text-gray-700 dark:text-gray-300 font-semibold">『챗GPT와 함께하는 주식 데이터 분석』</span>
-                      <span className="text-sm text-gray-500 dark:text-gray-400 ml-2">(영진닷컴)</span>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">프롬프트 엔지니어링을 활용한 주식 데이터 수집·분석·시각화·백테스팅·AI 예측까지 다루는 실전 가이드북</p>
-                    </div>
+                      대표 상세이력 보기
+                    </a>
                   </div>
                 </div>
               </div>
