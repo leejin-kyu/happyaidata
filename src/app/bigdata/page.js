@@ -578,13 +578,13 @@ export default function BigData() {
       </section>
 
       {/* NLP 분석 파이프라인 */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block text-sm font-semibold text-purple-400 tracking-wide uppercase mb-3">
               NLP Analysis Pipeline
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               텍스트마이닝 분석 파이프라인
             </h2>
             <p className="text-xl text-gray-400">
@@ -597,8 +597,8 @@ export default function BigData() {
               {/* Pipeline Flow */}
               <div className="space-y-4">
                 {/* Row 1 */}
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div className="bg-gradient-to-br from-blue-500/20 to-blue-500/5 border border-blue-500/30 rounded-2xl p-5">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+                  <div className="bg-gradient-to-br from-blue-500/20 to-blue-500/5 border border-blue-500/30 rounded-2xl p-4 md:p-5">
                     <div className="flex items-center mb-3">
                       <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center mr-2 text-sm font-bold">1</div>
                       <h4 className="font-bold text-sm">Data Collection</h4>
@@ -644,8 +644,8 @@ export default function BigData() {
                 </div>
 
                 {/* Row 2 */}
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div className="bg-gradient-to-br from-pink-500/20 to-pink-500/5 border border-pink-500/30 rounded-2xl p-5">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+                  <div className="bg-gradient-to-br from-pink-500/20 to-pink-500/5 border border-pink-500/30 rounded-2xl p-4 md:p-5">
                     <div className="flex items-center mb-3">
                       <div className="w-8 h-8 bg-pink-500 rounded-lg flex items-center justify-center mr-2 text-sm font-bold">4</div>
                       <h4 className="font-bold text-sm">AI Analysis</h4>
@@ -690,13 +690,13 @@ export default function BigData() {
       </section>
 
       {/* 분석 도구 & 프레임워크 */}
-      <section className="py-20 bg-white dark:bg-gray-900">
+      <section className="py-12 md:py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block text-sm font-semibold text-indigo-600 dark:text-indigo-400 tracking-wide uppercase mb-3">
               Analysis Framework
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               분석 도구 &middot; 프레임워크
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400">
@@ -704,10 +704,10 @@ export default function BigData() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {/* Python NLP */}
             <div className="bg-gradient-to-b from-yellow-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl border border-yellow-200 dark:border-gray-700 overflow-hidden">
-              <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 px-5 py-2.5">
+              <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 px-3 md:px-5 py-2">
                 <h3 className="text-white font-bold text-xs">Python NLP</h3>
               </div>
               <div className="p-4 space-y-2">
@@ -728,7 +728,7 @@ export default function BigData() {
 
             {/* Deep Learning */}
             <div className="bg-gradient-to-b from-red-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl border border-red-200 dark:border-gray-700 overflow-hidden">
-              <div className="bg-gradient-to-r from-red-500 to-red-600 px-5 py-2.5">
+              <div className="bg-gradient-to-r from-red-500 to-red-600 px-3 md:px-5 py-2">
                 <h3 className="text-white font-bold text-xs">Deep Learning</h3>
               </div>
               <div className="p-4 space-y-2">
@@ -749,7 +749,7 @@ export default function BigData() {
 
             {/* Visualization */}
             <div className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl border border-blue-200 dark:border-gray-700 overflow-hidden">
-              <div className="bg-gradient-to-r from-blue-500 to-blue-600 px-5 py-2.5">
+              <div className="bg-gradient-to-r from-blue-500 to-blue-600 px-3 md:px-5 py-2">
                 <h3 className="text-white font-bold text-xs">Visualization</h3>
               </div>
               <div className="p-4 space-y-2">
@@ -770,7 +770,7 @@ export default function BigData() {
 
             {/* Platform */}
             <div className="bg-gradient-to-b from-green-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl border border-green-200 dark:border-gray-700 overflow-hidden">
-              <div className="bg-gradient-to-r from-green-500 to-green-600 px-5 py-2.5">
+              <div className="bg-gradient-to-r from-green-500 to-green-600 px-3 md:px-5 py-2">
                 <h3 className="text-white font-bold text-xs">Platform &middot; Infra</h3>
               </div>
               <div className="p-4 space-y-2">
@@ -947,10 +947,10 @@ export default function BigData() {
       </section>
 
       {/* 프로젝트 실적 인포그래픽 */}
-      <section className="py-20 bg-gradient-to-br from-purple-600 to-indigo-700 text-white">
+      <section className="py-12 md:py-20 bg-gradient-to-br from-purple-600 to-indigo-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               검증된 분석 역량
             </h2>
             <p className="text-xl text-purple-200">
@@ -960,22 +960,22 @@ export default function BigData() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
             <div className="text-center">
-              <div className="text-6xl md:text-7xl font-black mb-2">300<span className="text-4xl md:text-5xl">+</span></div>
+              <div className="text-5xl md:text-6xl lg:text-7xl font-black mb-2">300<span className="text-3xl md:text-4xl lg:text-5xl">+</span></div>
               <div className="w-16 h-1 bg-white/30 mx-auto mb-3 rounded-full"></div>
               <p className="text-purple-200 text-sm font-medium">누적 프로젝트 수</p>
             </div>
             <div className="text-center">
-              <div className="text-6xl md:text-7xl font-black mb-2">50<span className="text-4xl md:text-5xl">+</span></div>
+              <div className="text-5xl md:text-6xl lg:text-7xl font-black mb-2">50<span className="text-3xl md:text-4xl lg:text-5xl">+</span></div>
               <div className="w-16 h-1 bg-white/30 mx-auto mb-3 rounded-full"></div>
               <p className="text-purple-200 text-sm font-medium">공공기관 수행</p>
             </div>
             <div className="text-center">
-              <div className="text-6xl md:text-7xl font-black mb-2">10<span className="text-4xl md:text-5xl">년</span></div>
+              <div className="text-5xl md:text-6xl lg:text-7xl font-black mb-2">10<span className="text-3xl md:text-4xl lg:text-5xl">년</span></div>
               <div className="w-16 h-1 bg-white/30 mx-auto mb-3 rounded-full"></div>
               <p className="text-purple-200 text-sm font-medium">텍스트마이닝 경력</p>
             </div>
             <div className="text-center">
-              <div className="text-6xl md:text-7xl font-black mb-2">98<span className="text-4xl md:text-5xl">%</span></div>
+              <div className="text-5xl md:text-6xl lg:text-7xl font-black mb-2">98<span className="text-3xl md:text-4xl lg:text-5xl">%</span></div>
               <div className="w-16 h-1 bg-white/30 mx-auto mb-3 rounded-full"></div>
               <p className="text-purple-200 text-sm font-medium">고객 만족도</p>
             </div>
@@ -983,9 +983,9 @@ export default function BigData() {
 
           {/* 주요 고객군 */}
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-8 border border-white/20">
               <h3 className="text-lg font-bold text-center mb-6">주요 고객군</h3>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              <div className="grid grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
                 <div className="text-center">
                   <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
                     <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
@@ -1023,13 +1023,13 @@ export default function BigData() {
       </section>
 
       {/* 데이터 분석 아키텍처 */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+      <section className="py-12 md:py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block text-sm font-semibold text-purple-600 dark:text-purple-400 tracking-wide uppercase mb-3">
               Data Architecture
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               분석 시스템 아키텍처
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400">
@@ -1038,11 +1038,11 @@ export default function BigData() {
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-8">
+            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-4 md:p-8">
               {/* Input Sources */}
               <div className="mb-6">
                 <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-3">Data Sources</p>
-                <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
+                <div className="grid grid-cols-3 md:grid-cols-6 gap-1.5 md:gap-2">
                   <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-2 text-center">
                     <p className="text-[10px] font-medium text-blue-700 dark:text-blue-300">뉴스</p>
                   </div>
@@ -1111,19 +1111,19 @@ export default function BigData() {
               <div>
                 <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-3">Output &middot; Deliverables</p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  <div className="bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-900/20 dark:to-teal-900/20 rounded-xl p-4 text-center border border-green-200 dark:border-green-800/30">
+                  <div className="bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-900/20 dark:to-teal-900/20 rounded-xl p-3 md:p-4 text-center border border-green-200 dark:border-green-800/30">
                     <svg className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
                     <p className="text-xs font-bold text-gray-900 dark:text-white">분석 보고서</p>
                   </div>
-                  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-xl p-4 text-center border border-blue-200 dark:border-blue-800/30">
+                  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-xl p-3 md:p-4 text-center border border-blue-200 dark:border-blue-800/30">
                     <svg className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
                     <p className="text-xs font-bold text-gray-900 dark:text-white">대시보드</p>
                   </div>
-                  <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl p-4 text-center border border-purple-200 dark:border-purple-800/30">
+                  <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl p-3 md:p-4 text-center border border-purple-200 dark:border-purple-800/30">
                     <svg className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" /></svg>
                     <p className="text-xs font-bold text-gray-900 dark:text-white">시각화 자료</p>
                   </div>
-                  <div className="bg-gradient-to-br from-orange-50 to-yellow-50 dark:from-orange-900/20 dark:to-yellow-900/20 rounded-xl p-4 text-center border border-orange-200 dark:border-orange-800/30">
+                  <div className="bg-gradient-to-br from-orange-50 to-yellow-50 dark:from-orange-900/20 dark:to-yellow-900/20 rounded-xl p-3 md:p-4 text-center border border-orange-200 dark:border-orange-800/30">
                     <svg className="w-8 h-8 text-orange-600 dark:text-orange-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
                     <p className="text-xs font-bold text-gray-900 dark:text-white">AI 인사이트</p>
                   </div>
