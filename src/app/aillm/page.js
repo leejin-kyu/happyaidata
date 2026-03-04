@@ -254,6 +254,195 @@ export default function AILLM() {
         </div>
       </section>
 
+      {/* LLM 성능 지표 대시보드 */}
+      <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-semibold text-green-600 dark:text-green-400 tracking-wide uppercase mb-3">
+              Performance Metrics
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+              도입 성과 지표
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">
+              실제 프로젝트 기반 평균 성과
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6 mb-12">
+            <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-6 text-white text-center shadow-xl">
+              <div className="text-5xl font-black mb-2">95<span className="text-3xl">%</span></div>
+              <div className="w-full bg-white/20 rounded-full h-2 mb-3">
+                <div className="bg-white rounded-full h-2" style={{width: "95%"}}></div>
+              </div>
+              <p className="text-sm font-medium text-blue-100">문서 검색 시간 단축</p>
+            </div>
+            <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl p-6 text-white text-center shadow-xl">
+              <div className="text-5xl font-black mb-2">92<span className="text-3xl">%</span></div>
+              <div className="w-full bg-white/20 rounded-full h-2 mb-3">
+                <div className="bg-white rounded-full h-2" style={{width: "92%"}}></div>
+              </div>
+              <p className="text-sm font-medium text-indigo-100">RAG 답변 정확도</p>
+            </div>
+            <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl p-6 text-white text-center shadow-xl">
+              <div className="text-5xl font-black mb-2">3<span className="text-3xl">x</span></div>
+              <div className="w-full bg-white/20 rounded-full h-2 mb-3">
+                <div className="bg-white rounded-full h-2" style={{width: "75%"}}></div>
+              </div>
+              <p className="text-sm font-medium text-purple-100">업무 처리 속도 향상</p>
+            </div>
+            <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-6 text-white text-center shadow-xl">
+              <div className="text-5xl font-black mb-2">60<span className="text-3xl">%</span></div>
+              <div className="w-full bg-white/20 rounded-full h-2 mb-3">
+                <div className="bg-white rounded-full h-2" style={{width: "60%"}}></div>
+              </div>
+              <p className="text-sm font-medium text-green-100">운영 비용 절감</p>
+            </div>
+          </div>
+
+          {/* Before/After 비교 */}
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-red-50 dark:bg-red-900/10 rounded-2xl p-8 border border-red-200 dark:border-red-800/30">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-red-100 dark:bg-red-900/30 rounded-xl flex items-center justify-center mr-3">
+                    <svg className="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                  </div>
+                  <h3 className="text-lg font-bold text-red-800 dark:text-red-300">Before</h3>
+                </div>
+                <ul className="space-y-3 text-sm text-red-700 dark:text-red-300">
+                  <li className="flex items-start"><span className="mr-2 mt-0.5">&bull;</span>문서 검색에 평균 30분 이상 소요</li>
+                  <li className="flex items-start"><span className="mr-2 mt-0.5">&bull;</span>매뉴얼 기반 수동 고객 응대</li>
+                  <li className="flex items-start"><span className="mr-2 mt-0.5">&bull;</span>신입 직원 업무 적응 3개월+</li>
+                  <li className="flex items-start"><span className="mr-2 mt-0.5">&bull;</span>보고서 작성에 하루 이상 소요</li>
+                </ul>
+              </div>
+              <div className="bg-green-50 dark:bg-green-900/10 rounded-2xl p-8 border border-green-200 dark:border-green-800/30">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center mr-3">
+                    <svg className="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  </div>
+                  <h3 className="text-lg font-bold text-green-800 dark:text-green-300">After (LLM 도입)</h3>
+                </div>
+                <ul className="space-y-3 text-sm text-green-700 dark:text-green-300">
+                  <li className="flex items-start"><span className="mr-2 mt-0.5">&bull;</span>AI 자연어 검색으로 즉시 답변</li>
+                  <li className="flex items-start"><span className="mr-2 mt-0.5">&bull;</span>24/7 AI 챗봇 자동 응대</li>
+                  <li className="flex items-start"><span className="mr-2 mt-0.5">&bull;</span>AI 어시스턴트로 즉시 업무 투입</li>
+                  <li className="flex items-start"><span className="mr-2 mt-0.5">&bull;</span>AI 초안 생성으로 1시간 내 완성</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Private LLM 배포 아키텍처 */}
+      <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-semibold text-cyan-400 tracking-wide uppercase mb-3">
+              Deployment Architecture
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Private LLM 배포 구조
+            </h2>
+            <p className="text-xl text-gray-400">
+              On-premise &middot; Cloud &middot; Hybrid 환경 모두 지원
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            {/* 3-Layer Architecture */}
+            <div className="space-y-4">
+              {/* Layer 1: Client */}
+              <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-2xl p-6">
+                <div className="flex items-center mb-4">
+                  <span className="text-xs font-bold text-cyan-400 uppercase tracking-wider bg-cyan-500/20 px-3 py-1 rounded-full">Client Layer</span>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <svg className="w-6 h-6 mx-auto mb-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                    <p className="text-[11px] font-medium">Web App</p>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <svg className="w-6 h-6 mx-auto mb-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                    <p className="text-[11px] font-medium">Mobile</p>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <svg className="w-6 h-6 mx-auto mb-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                    <p className="text-[11px] font-medium">API</p>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <svg className="w-6 h-6 mx-auto mb-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
+                    <p className="text-[11px] font-medium">Chatbot</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex justify-center"><div className="w-0.5 h-4 bg-gradient-to-b from-cyan-500/50 to-blue-500/50"></div></div>
+
+              {/* Layer 2: Application */}
+              <div className="bg-blue-500/10 border border-blue-500/30 rounded-2xl p-6">
+                <div className="flex items-center mb-4">
+                  <span className="text-xs font-bold text-blue-400 uppercase tracking-wider bg-blue-500/20 px-3 py-1 rounded-full">Application Layer</span>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <p className="text-[11px] font-medium text-blue-300">LLM Gateway</p>
+                    <p className="text-[9px] text-gray-400 mt-1">로드밸런싱</p>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <p className="text-[11px] font-medium text-blue-300">RAG Engine</p>
+                    <p className="text-[9px] text-gray-400 mt-1">검색 증강</p>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <p className="text-[11px] font-medium text-blue-300">Agent Router</p>
+                    <p className="text-[9px] text-gray-400 mt-1">MCP 연동</p>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <p className="text-[11px] font-medium text-blue-300">Guardrails</p>
+                    <p className="text-[9px] text-gray-400 mt-1">안전 필터</p>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <p className="text-[11px] font-medium text-blue-300">Monitoring</p>
+                    <p className="text-[9px] text-gray-400 mt-1">로그 &middot; 추적</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex justify-center"><div className="w-0.5 h-4 bg-gradient-to-b from-blue-500/50 to-purple-500/50"></div></div>
+
+              {/* Layer 3: Infrastructure */}
+              <div className="bg-purple-500/10 border border-purple-500/30 rounded-2xl p-6">
+                <div className="flex items-center mb-4">
+                  <span className="text-xs font-bold text-purple-400 uppercase tracking-wider bg-purple-500/20 px-3 py-1 rounded-full">Infrastructure Layer</span>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <p className="text-[11px] font-medium text-purple-300">LLM Server</p>
+                    <p className="text-[9px] text-gray-400 mt-1">vLLM &middot; TGI</p>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <p className="text-[11px] font-medium text-purple-300">Vector DB</p>
+                    <p className="text-[9px] text-gray-400 mt-1">Chroma &middot; Milvus</p>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <p className="text-[11px] font-medium text-purple-300">GPU Cluster</p>
+                    <p className="text-[9px] text-gray-400 mt-1">A100 &middot; H100</p>
+                  </div>
+                  <div className="bg-white/5 backdrop-blur rounded-xl p-3 text-center border border-white/10">
+                    <p className="text-[11px] font-medium text-purple-300">Storage</p>
+                    <p className="text-[9px] text-gray-400 mt-1">S3 &middot; NFS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 핵심 기능 */}
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -548,6 +737,209 @@ export default function AILLM() {
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 매뉴얼 기반 자동 응대
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI 기술 스택 에코시스템 */}
+      <section className="py-20 bg-white dark:bg-gray-900 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-semibold text-blue-600 dark:text-blue-400 tracking-wide uppercase mb-3">
+              Technology Stack
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+              AI 기술 스택
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">
+              산업 현장에서 검증된 최신 AI 기술을 활용합니다
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* LLM & Foundation */}
+            <div className="relative">
+              <div className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl border border-blue-200 dark:border-gray-700 overflow-hidden">
+                <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-3">
+                  <h3 className="text-white font-bold text-sm flex items-center">
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                    LLM &middot; Foundation Model
+                  </h3>
+                </div>
+                <div className="p-6 space-y-3">
+                  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 border border-gray-100 dark:border-gray-700">
+                    <span className="text-sm font-medium text-gray-900 dark:text-white">GPT-4o / GPT-4 Turbo</span>
+                    <span className="text-[10px] bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded-full">OpenAI</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 border border-gray-100 dark:border-gray-700">
+                    <span className="text-sm font-medium text-gray-900 dark:text-white">Claude 3.5 / Opus</span>
+                    <span className="text-[10px] bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 px-2 py-0.5 rounded-full">Anthropic</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 border border-gray-100 dark:border-gray-700">
+                    <span className="text-sm font-medium text-gray-900 dark:text-white">Llama 3.1 / Gemma 2</span>
+                    <span className="text-[10px] bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 px-2 py-0.5 rounded-full">Open Source</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 border border-gray-100 dark:border-gray-700">
+                    <span className="text-sm font-medium text-gray-900 dark:text-white">HyperCLOVA X</span>
+                    <span className="text-[10px] bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 px-2 py-0.5 rounded-full">Naver</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* RAG & Vector DB */}
+            <div className="relative">
+              <div className="bg-gradient-to-b from-indigo-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl border border-indigo-200 dark:border-gray-700 overflow-hidden">
+                <div className="bg-gradient-to-r from-indigo-600 to-indigo-700 px-6 py-3">
+                  <h3 className="text-white font-bold text-sm flex items-center">
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" /></svg>
+                    RAG &middot; Vector Database
+                  </h3>
+                </div>
+                <div className="p-6 space-y-3">
+                  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 border border-gray-100 dark:border-gray-700">
+                    <span className="text-sm font-medium text-gray-900 dark:text-white">LangChain / LlamaIndex</span>
+                    <span className="text-[10px] bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 px-2 py-0.5 rounded-full">Framework</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 border border-gray-100 dark:border-gray-700">
+                    <span className="text-sm font-medium text-gray-900 dark:text-white">ChromaDB / Pinecone</span>
+                    <span className="text-[10px] bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 px-2 py-0.5 rounded-full">Vector DB</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 border border-gray-100 dark:border-gray-700">
+                    <span className="text-sm font-medium text-gray-900 dark:text-white">OpenAI / BGE Embedding</span>
+                    <span className="text-[10px] bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 px-2 py-0.5 rounded-full">Embedding</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 border border-gray-100 dark:border-gray-700">
+                    <span className="text-sm font-medium text-gray-900 dark:text-white">Elasticsearch / FAISS</span>
+                    <span className="text-[10px] bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 px-2 py-0.5 rounded-full">Search</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Agent & Infra */}
+            <div className="relative">
+              <div className="bg-gradient-to-b from-purple-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl border border-purple-200 dark:border-gray-700 overflow-hidden">
+                <div className="bg-gradient-to-r from-purple-600 to-purple-700 px-6 py-3">
+                  <h3 className="text-white font-bold text-sm flex items-center">
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    Agent &middot; Infrastructure
+                  </h3>
+                </div>
+                <div className="p-6 space-y-3">
+                  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 border border-gray-100 dark:border-gray-700">
+                    <span className="text-sm font-medium text-gray-900 dark:text-white">AutoGen / CrewAI</span>
+                    <span className="text-[10px] bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 px-2 py-0.5 rounded-full">Multi-Agent</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 border border-gray-100 dark:border-gray-700">
+                    <span className="text-sm font-medium text-gray-900 dark:text-white">MCP / Tool Use</span>
+                    <span className="text-[10px] bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 px-2 py-0.5 rounded-full">Protocol</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 border border-gray-100 dark:border-gray-700">
+                    <span className="text-sm font-medium text-gray-900 dark:text-white">Docker / Kubernetes</span>
+                    <span className="text-[10px] bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 px-2 py-0.5 rounded-full">Deploy</span>
+                  </div>
+                  <div className="flex items-center justify-between bg-white dark:bg-gray-800 rounded-lg px-4 py-2.5 border border-gray-100 dark:border-gray-700">
+                    <span className="text-sm font-medium text-gray-900 dark:text-white">LoRA / QLoRA / PEFT</span>
+                    <span className="text-[10px] bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 px-2 py-0.5 rounded-full">Fine-tune</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Multi-Agent 아키텍처 */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-semibold text-purple-600 dark:text-purple-400 tracking-wide uppercase mb-3">
+              Multi-Agent System
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+              AI Agent 아키텍처
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">
+              복잡한 업무를 자동으로 분해하고 실행하는 지능형 에이전트
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            {/* Orchestrator */}
+            <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-6 text-white text-center mb-6 shadow-xl">
+              <div className="flex items-center justify-center mb-2">
+                <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                <h3 className="text-xl font-bold">Orchestrator Agent</h3>
+              </div>
+              <p className="text-sm text-white/80">사용자 의도 파악 &middot; 태스크 분배 &middot; 결과 취합</p>
+            </div>
+
+            {/* Connection Lines */}
+            <div className="flex justify-center mb-6">
+              <div className="grid grid-cols-4 gap-8 md:gap-16 w-full max-w-3xl">
+                <div className="flex justify-center"><div className="w-0.5 h-8 bg-gradient-to-b from-purple-400 to-blue-400"></div></div>
+                <div className="flex justify-center"><div className="w-0.5 h-8 bg-gradient-to-b from-purple-400 to-green-400"></div></div>
+                <div className="flex justify-center"><div className="w-0.5 h-8 bg-gradient-to-b from-purple-400 to-orange-400"></div></div>
+                <div className="flex justify-center"><div className="w-0.5 h-8 bg-gradient-to-b from-purple-400 to-pink-400"></div></div>
+              </div>
+            </div>
+
+            {/* Sub Agents */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+              <div className="bg-white dark:bg-gray-900 rounded-xl p-5 border-2 border-blue-200 dark:border-blue-800 text-center shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </div>
+                <h4 className="font-bold text-sm text-gray-900 dark:text-white mb-1">Retrieval Agent</h4>
+                <p className="text-[10px] text-gray-500 dark:text-gray-400">문서 검색 &middot; 정보 추출</p>
+              </div>
+              <div className="bg-white dark:bg-gray-900 rounded-xl p-5 border-2 border-green-200 dark:border-green-800 text-center shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
+                </div>
+                <h4 className="font-bold text-sm text-gray-900 dark:text-white mb-1">Analysis Agent</h4>
+                <p className="text-[10px] text-gray-500 dark:text-gray-400">데이터 분석 &middot; 요약</p>
+              </div>
+              <div className="bg-white dark:bg-gray-900 rounded-xl p-5 border-2 border-orange-200 dark:border-orange-800 text-center shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                </div>
+                <h4 className="font-bold text-sm text-gray-900 dark:text-white mb-1">Code Agent</h4>
+                <p className="text-[10px] text-gray-500 dark:text-gray-400">코드 생성 &middot; 실행</p>
+              </div>
+              <div className="bg-white dark:bg-gray-900 rounded-xl p-5 border-2 border-pink-200 dark:border-pink-800 text-center shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-12 h-12 bg-pink-100 dark:bg-pink-900/30 rounded-xl flex items-center justify-center mx-auto mb-3">
+                  <svg className="w-6 h-6 text-pink-600 dark:text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
+                </div>
+                <h4 className="font-bold text-sm text-gray-900 dark:text-white mb-1">Response Agent</h4>
+                <p className="text-[10px] text-gray-500 dark:text-gray-400">답변 생성 &middot; 검증</p>
+              </div>
+            </div>
+
+            {/* Tools & MCP Layer */}
+            <div className="flex justify-center mb-6">
+              <div className="grid grid-cols-4 gap-8 md:gap-16 w-full max-w-3xl">
+                <div className="flex justify-center"><div className="w-0.5 h-6 bg-gray-300 dark:bg-gray-600"></div></div>
+                <div className="flex justify-center"><div className="w-0.5 h-6 bg-gray-300 dark:bg-gray-600"></div></div>
+                <div className="flex justify-center"><div className="w-0.5 h-6 bg-gray-300 dark:bg-gray-600"></div></div>
+                <div className="flex justify-center"><div className="w-0.5 h-6 bg-gray-300 dark:bg-gray-600"></div></div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-gray-100 to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-5 border border-gray-200 dark:border-gray-700">
+              <div className="text-center mb-3">
+                <span className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">MCP Tools &middot; External APIs &middot; Database</span>
+              </div>
+              <div className="flex flex-wrap justify-center gap-2">
+                <span className="bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-600">Web Search</span>
+                <span className="bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-600">SQL Query</span>
+                <span className="bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-600">File I/O</span>
+                <span className="bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-600">API Call</span>
+                <span className="bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-600">Vector DB</span>
+                <span className="bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-600">Calculator</span>
+              </div>
             </div>
           </div>
         </div>

@@ -577,6 +577,221 @@ export default function BigData() {
         </div>
       </section>
 
+      {/* NLP 분석 파이프라인 */}
+      <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-semibold text-purple-400 tracking-wide uppercase mb-3">
+              NLP Analysis Pipeline
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              텍스트마이닝 분석 파이프라인
+            </h2>
+            <p className="text-xl text-gray-400">
+              원천 데이터에서 비즈니스 인사이트까지
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="relative">
+              {/* Pipeline Flow */}
+              <div className="space-y-4">
+                {/* Row 1 */}
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="bg-gradient-to-br from-blue-500/20 to-blue-500/5 border border-blue-500/30 rounded-2xl p-5">
+                    <div className="flex items-center mb-3">
+                      <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center mr-2 text-sm font-bold">1</div>
+                      <h4 className="font-bold text-sm">Data Collection</h4>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5">
+                      <span className="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-1 rounded">뉴스 크롤링</span>
+                      <span className="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-1 rounded">SNS API</span>
+                      <span className="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-1 rounded">설문 데이터</span>
+                      <span className="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-1 rounded">리뷰 수집</span>
+                      <span className="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-1 rounded">공공 데이터</span>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-indigo-500/20 to-indigo-500/5 border border-indigo-500/30 rounded-2xl p-5">
+                    <div className="flex items-center mb-3">
+                      <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center mr-2 text-sm font-bold">2</div>
+                      <h4 className="font-bold text-sm">Preprocessing</h4>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5">
+                      <span className="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded">형태소 분석</span>
+                      <span className="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded">불용어 제거</span>
+                      <span className="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded">정규화</span>
+                      <span className="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded">토큰화</span>
+                      <span className="text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded">TF-IDF</span>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-purple-500/20 to-purple-500/5 border border-purple-500/30 rounded-2xl p-5">
+                    <div className="flex items-center mb-3">
+                      <div className="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center mr-2 text-sm font-bold">3</div>
+                      <h4 className="font-bold text-sm">Feature Engineering</h4>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5">
+                      <span className="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-1 rounded">Word2Vec</span>
+                      <span className="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-1 rounded">FastText</span>
+                      <span className="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-1 rounded">Sentence-BERT</span>
+                      <span className="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-1 rounded">Doc2Vec</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Arrow */}
+                <div className="flex justify-center">
+                  <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+                </div>
+
+                {/* Row 2 */}
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="bg-gradient-to-br from-pink-500/20 to-pink-500/5 border border-pink-500/30 rounded-2xl p-5">
+                    <div className="flex items-center mb-3">
+                      <div className="w-8 h-8 bg-pink-500 rounded-lg flex items-center justify-center mr-2 text-sm font-bold">4</div>
+                      <h4 className="font-bold text-sm">AI Analysis</h4>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5">
+                      <span className="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-1 rounded">LDA</span>
+                      <span className="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-1 rounded">BERTopic</span>
+                      <span className="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-1 rounded">STM</span>
+                      <span className="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-1 rounded">감성분석</span>
+                      <span className="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-1 rounded">네트워크</span>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-orange-500/20 to-orange-500/5 border border-orange-500/30 rounded-2xl p-5">
+                    <div className="flex items-center mb-3">
+                      <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center mr-2 text-sm font-bold">5</div>
+                      <h4 className="font-bold text-sm">Visualization</h4>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5">
+                      <span className="text-[10px] bg-orange-500/20 text-orange-300 px-2 py-1 rounded">워드클라우드</span>
+                      <span className="text-[10px] bg-orange-500/20 text-orange-300 px-2 py-1 rounded">네트워크 그래프</span>
+                      <span className="text-[10px] bg-orange-500/20 text-orange-300 px-2 py-1 rounded">히트맵</span>
+                      <span className="text-[10px] bg-orange-500/20 text-orange-300 px-2 py-1 rounded">시계열 차트</span>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-green-500/20 to-green-500/5 border border-green-500/30 rounded-2xl p-5">
+                    <div className="flex items-center mb-3">
+                      <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center mr-2 text-sm font-bold">6</div>
+                      <h4 className="font-bold text-sm">Insight Report</h4>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5">
+                      <span className="text-[10px] bg-green-500/20 text-green-300 px-2 py-1 rounded">LLM 해석</span>
+                      <span className="text-[10px] bg-green-500/20 text-green-300 px-2 py-1 rounded">요약 리포트</span>
+                      <span className="text-[10px] bg-green-500/20 text-green-300 px-2 py-1 rounded">정책 제언</span>
+                      <span className="text-[10px] bg-green-500/20 text-green-300 px-2 py-1 rounded">대시보드</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 분석 도구 & 프레임워크 */}
+      <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-semibold text-indigo-600 dark:text-indigo-400 tracking-wide uppercase mb-3">
+              Analysis Framework
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+              분석 도구 &middot; 프레임워크
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">
+              산업 현장에서 가장 많이 사용되는 분석 기술
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Python NLP */}
+            <div className="bg-gradient-to-b from-yellow-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl border border-yellow-200 dark:border-gray-700 overflow-hidden">
+              <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 px-5 py-2.5">
+                <h3 className="text-white font-bold text-xs">Python NLP</h3>
+              </div>
+              <div className="p-4 space-y-2">
+                <div className="bg-white dark:bg-gray-800 rounded-lg px-3 py-2 border border-gray-100 dark:border-gray-700">
+                  <p className="text-xs font-medium text-gray-900 dark:text-white">KoNLPy &middot; Mecab</p>
+                  <p className="text-[10px] text-gray-500">한국어 형태소 분석</p>
+                </div>
+                <div className="bg-white dark:bg-gray-800 rounded-lg px-3 py-2 border border-gray-100 dark:border-gray-700">
+                  <p className="text-xs font-medium text-gray-900 dark:text-white">spaCy &middot; NLTK</p>
+                  <p className="text-[10px] text-gray-500">자연어 처리 프레임워크</p>
+                </div>
+                <div className="bg-white dark:bg-gray-800 rounded-lg px-3 py-2 border border-gray-100 dark:border-gray-700">
+                  <p className="text-xs font-medium text-gray-900 dark:text-white">Gensim &middot; scikit-learn</p>
+                  <p className="text-[10px] text-gray-500">토픽모델링 &middot; ML</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Deep Learning */}
+            <div className="bg-gradient-to-b from-red-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl border border-red-200 dark:border-gray-700 overflow-hidden">
+              <div className="bg-gradient-to-r from-red-500 to-red-600 px-5 py-2.5">
+                <h3 className="text-white font-bold text-xs">Deep Learning</h3>
+              </div>
+              <div className="p-4 space-y-2">
+                <div className="bg-white dark:bg-gray-800 rounded-lg px-3 py-2 border border-gray-100 dark:border-gray-700">
+                  <p className="text-xs font-medium text-gray-900 dark:text-white">PyTorch &middot; TensorFlow</p>
+                  <p className="text-[10px] text-gray-500">딥러닝 프레임워크</p>
+                </div>
+                <div className="bg-white dark:bg-gray-800 rounded-lg px-3 py-2 border border-gray-100 dark:border-gray-700">
+                  <p className="text-xs font-medium text-gray-900 dark:text-white">HuggingFace Transformers</p>
+                  <p className="text-[10px] text-gray-500">사전학습 모델</p>
+                </div>
+                <div className="bg-white dark:bg-gray-800 rounded-lg px-3 py-2 border border-gray-100 dark:border-gray-700">
+                  <p className="text-xs font-medium text-gray-900 dark:text-white">BERTopic &middot; SetFit</p>
+                  <p className="text-[10px] text-gray-500">최신 NLP 모델</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Visualization */}
+            <div className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl border border-blue-200 dark:border-gray-700 overflow-hidden">
+              <div className="bg-gradient-to-r from-blue-500 to-blue-600 px-5 py-2.5">
+                <h3 className="text-white font-bold text-xs">Visualization</h3>
+              </div>
+              <div className="p-4 space-y-2">
+                <div className="bg-white dark:bg-gray-800 rounded-lg px-3 py-2 border border-gray-100 dark:border-gray-700">
+                  <p className="text-xs font-medium text-gray-900 dark:text-white">Plotly &middot; D3.js</p>
+                  <p className="text-[10px] text-gray-500">인터랙티브 시각화</p>
+                </div>
+                <div className="bg-white dark:bg-gray-800 rounded-lg px-3 py-2 border border-gray-100 dark:border-gray-700">
+                  <p className="text-xs font-medium text-gray-900 dark:text-white">NetworkX &middot; Gephi</p>
+                  <p className="text-[10px] text-gray-500">네트워크 분석</p>
+                </div>
+                <div className="bg-white dark:bg-gray-800 rounded-lg px-3 py-2 border border-gray-100 dark:border-gray-700">
+                  <p className="text-xs font-medium text-gray-900 dark:text-white">WordCloud &middot; Matplotlib</p>
+                  <p className="text-[10px] text-gray-500">워드클라우드 &middot; 차트</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Platform */}
+            <div className="bg-gradient-to-b from-green-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl border border-green-200 dark:border-gray-700 overflow-hidden">
+              <div className="bg-gradient-to-r from-green-500 to-green-600 px-5 py-2.5">
+                <h3 className="text-white font-bold text-xs">Platform &middot; Infra</h3>
+              </div>
+              <div className="p-4 space-y-2">
+                <div className="bg-white dark:bg-gray-800 rounded-lg px-3 py-2 border border-gray-100 dark:border-gray-700">
+                  <p className="text-xs font-medium text-gray-900 dark:text-white">AWS &middot; GCP &middot; Azure</p>
+                  <p className="text-[10px] text-gray-500">클라우드 인프라</p>
+                </div>
+                <div className="bg-white dark:bg-gray-800 rounded-lg px-3 py-2 border border-gray-100 dark:border-gray-700">
+                  <p className="text-xs font-medium text-gray-900 dark:text-white">Apache Spark &middot; Airflow</p>
+                  <p className="text-[10px] text-gray-500">대용량 데이터 처리</p>
+                </div>
+                <div className="bg-white dark:bg-gray-800 rounded-lg px-3 py-2 border border-gray-100 dark:border-gray-700">
+                  <p className="text-xs font-medium text-gray-900 dark:text-white">Streamlit &middot; Gradio</p>
+                  <p className="text-[10px] text-gray-500">분석 대시보드</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* TEXNOVA 플랫폼 */}
       <section className="py-20 bg-gradient-to-br from-purple-600 to-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -726,6 +941,194 @@ export default function BigData() {
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 의료 데이터 분석 및 연구
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 프로젝트 실적 인포그래픽 */}
+      <section className="py-20 bg-gradient-to-br from-purple-600 to-indigo-700 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              검증된 분석 역량
+            </h2>
+            <p className="text-xl text-purple-200">
+              공공&middot;대기업&middot;국책기관 프로젝트 실적
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div className="text-center">
+              <div className="text-6xl md:text-7xl font-black mb-2">300<span className="text-4xl md:text-5xl">+</span></div>
+              <div className="w-16 h-1 bg-white/30 mx-auto mb-3 rounded-full"></div>
+              <p className="text-purple-200 text-sm font-medium">누적 프로젝트 수</p>
+            </div>
+            <div className="text-center">
+              <div className="text-6xl md:text-7xl font-black mb-2">50<span className="text-4xl md:text-5xl">+</span></div>
+              <div className="w-16 h-1 bg-white/30 mx-auto mb-3 rounded-full"></div>
+              <p className="text-purple-200 text-sm font-medium">공공기관 수행</p>
+            </div>
+            <div className="text-center">
+              <div className="text-6xl md:text-7xl font-black mb-2">10<span className="text-4xl md:text-5xl">년</span></div>
+              <div className="w-16 h-1 bg-white/30 mx-auto mb-3 rounded-full"></div>
+              <p className="text-purple-200 text-sm font-medium">텍스트마이닝 경력</p>
+            </div>
+            <div className="text-center">
+              <div className="text-6xl md:text-7xl font-black mb-2">98<span className="text-4xl md:text-5xl">%</span></div>
+              <div className="w-16 h-1 bg-white/30 mx-auto mb-3 rounded-full"></div>
+              <p className="text-purple-200 text-sm font-medium">고객 만족도</p>
+            </div>
+          </div>
+
+          {/* 주요 고객군 */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <h3 className="text-lg font-bold text-center mb-6">주요 고객군</h3>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div className="text-center">
+                  <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                  </div>
+                  <p className="text-xs font-medium">중앙행정기관</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                  </div>
+                  <p className="text-xs font-medium">교육기관</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                  </div>
+                  <p className="text-xs font-medium">국책연구기관</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                  </div>
+                  <p className="text-xs font-medium">대기업</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                  </div>
+                  <p className="text-xs font-medium">금융권</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 데이터 분석 아키텍처 */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-semibold text-purple-600 dark:text-purple-400 tracking-wide uppercase mb-3">
+              Data Architecture
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+              분석 시스템 아키텍처
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">
+              TexNOVA 빅데이터 분석 플랫폼 구조
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-8">
+              {/* Input Sources */}
+              <div className="mb-6">
+                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-3">Data Sources</p>
+                <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
+                  <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-2 text-center">
+                    <p className="text-[10px] font-medium text-blue-700 dark:text-blue-300">뉴스</p>
+                  </div>
+                  <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-2 text-center">
+                    <p className="text-[10px] font-medium text-blue-700 dark:text-blue-300">SNS</p>
+                  </div>
+                  <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-2 text-center">
+                    <p className="text-[10px] font-medium text-blue-700 dark:text-blue-300">리뷰</p>
+                  </div>
+                  <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-2 text-center">
+                    <p className="text-[10px] font-medium text-blue-700 dark:text-blue-300">설문</p>
+                  </div>
+                  <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-2 text-center">
+                    <p className="text-[10px] font-medium text-blue-700 dark:text-blue-300">논문</p>
+                  </div>
+                  <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-2 text-center">
+                    <p className="text-[10px] font-medium text-blue-700 dark:text-blue-300">보고서</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex justify-center my-3">
+                <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+              </div>
+
+              {/* Processing Engine */}
+              <div className="mb-6">
+                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-3">Processing Engine</p>
+                <div className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-gray-800 dark:to-gray-800 rounded-xl p-4 border border-indigo-100 dark:border-gray-700">
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div className="text-center">
+                      <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-1.5">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                      </div>
+                      <p className="text-[10px] font-bold text-gray-900 dark:text-white">NLP 전처리</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center mx-auto mb-1.5">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                      </div>
+                      <p className="text-[10px] font-bold text-gray-900 dark:text-white">AI 분석</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-10 h-10 bg-pink-600 rounded-lg flex items-center justify-center mx-auto mb-1.5">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                      </div>
+                      <p className="text-[10px] font-bold text-gray-900 dark:text-white">시각화</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center mx-auto mb-1.5">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                      </div>
+                      <p className="text-[10px] font-bold text-gray-900 dark:text-white">리포팅</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex justify-center my-3">
+                <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+              </div>
+
+              {/* Output */}
+              <div>
+                <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-3">Output &middot; Deliverables</p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  <div className="bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-900/20 dark:to-teal-900/20 rounded-xl p-4 text-center border border-green-200 dark:border-green-800/30">
+                    <svg className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    <p className="text-xs font-bold text-gray-900 dark:text-white">분석 보고서</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-xl p-4 text-center border border-blue-200 dark:border-blue-800/30">
+                    <svg className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    <p className="text-xs font-bold text-gray-900 dark:text-white">대시보드</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl p-4 text-center border border-purple-200 dark:border-purple-800/30">
+                    <svg className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" /></svg>
+                    <p className="text-xs font-bold text-gray-900 dark:text-white">시각화 자료</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-orange-50 to-yellow-50 dark:from-orange-900/20 dark:to-yellow-900/20 rounded-xl p-4 text-center border border-orange-200 dark:border-orange-800/30">
+                    <svg className="w-8 h-8 text-orange-600 dark:text-orange-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                    <p className="text-xs font-bold text-gray-900 dark:text-white">AI 인사이트</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
